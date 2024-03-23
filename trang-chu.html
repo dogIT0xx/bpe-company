@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+	<title>CÔNG TY TRÁCH NHIỆM HỮU HẠN BPE</title>
+	<style type="text/css">
+		.sub-info:last-child {
+			display: none;
+		}
+
+		div#vnt-header>.main-header .logo {
+			max-width: 95px;
+			margin-top: 0px;
+		}
+
+		.product .i-image {
+			background: none !important;
+		}
+
+		.product .src_status {
+			top: 30px !important;
+			right: 40px !important;
+		}
+
+		.product .src_status img {
+			max-width: 55px !important;
+		}
+	</style>
+	<link href="./assets/styles/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/styles/fancybox.css" rel="stylesheet" type="text/css" />
+	<link href="https://joyfood.com.vn/skins/default/style/screen.css" rel="stylesheet" type="text/css" />
+	<link href="./assets/styles/slick.css" type="text/css" rel="stylesheet" />
+	<link href="./assets/styles/slick-theme.css" type="text/css" rel="stylesheet" />
+	<script language="javascript">
+		var ROOT = './trang-chu.html'
+		var ROOT_MOD = './trang-chu.html'
+		var ROOT_PROD = ''
+		var url = ''
+		var actmod = ''
+		var DIR_IMAGE = ''
+		var cmd = 'vnTRUST'
+		var lang = 'vn'
+		var mem_id = 0
+		var hotline = '0909 438 000'
+		var messenger = ''
+		var zalo = ''
+		var skype = ''
+		var email = 'cskh@joyfood.com.vn; huu.ha@joyfood.com.vn'
+		var js_lang = new Array()
+		js_lang['announce'] = 'Thông báo'
+		js_lang['error'] = 'Báo lỗi'
+	</script>
+
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="./assets/js/boostrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/js/fancybox/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="./assets/js/core.js"></script>
+	<script type="text/javascript" src="./assets/js/slideSlick/js/slick.js"></script>
+	<script type="text/javascript" src="./assets/js/javascript.js"></script>
+	<link rel="stylesheet" href="./assets/styles/main.css" type="text/css" />
+	<link rel="stylesheet" href="./assets/styles/product.css" type="text/css" />
+	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="./assets/js/lazingloading/jquery.lazyscrollloading.js"></script>
+	<script type="text/javascript">
+		var arr_cat = {
+			13: 'https://joyfood.com.vn/dung-cu-an-uong-dung-1-lan.html',
+			12: 'https://joyfood.com.vn/khay-ba-mia-tu-phan-huy.html',
+			10: 'https://joyfood.com.vn/to-ba-mia-tu-phan-huy.html',
+			8: 'https://joyfood.com.vn/Ly-Ba-Mia.html',
+			7: 'https://joyfood.com.vn/dia-ba-mia-tu-phan-huy.html',
+			6: 'https://joyfood.com.vn/hop-com-ba-mia-tu-phan-huy.html',
+		}
+		var arr_title_cat = {
+			0: '',
+			13: 'Dụng cụ ăn uống dùng 1 lần',
+			12: 'Khay Bã Mía',
+			10: 'Tô Bã Mía',
+			8: 'Ly Bã Mía',
+			7: 'Đĩa Bã Mía',
+			6: 'Hộp Cơm Bã Mía',
+		}
+
+		var arr_input = [
+			'p',
+			'catID',
+			'price',
+			'status_id',
+			'statusID',
+			'brand_id',
+			'bID',
+			'sort',
+			'vpage',
+		]
+	</script>
+</head>
+
+<body>
+	<div id="vnt-wrapper">
+		<div id="vnt-container">
+			<!--=== BEGIN: HEADER ===-->
+			<div id="vnt-header">
+				<div class="top-header">
+					<div class="wrapper">
+						<div class="vnt-hotline">
+							<div class="hotline">
+								Hotline: <span>0909 438 000</span>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="main-header">
+					<div class="wrapper">
+						<div class="logo">
+							<a onmousedown="return rwt(this,'advertise',1)" href="./trang-chu.html" target="_self"
+								title="CÔNG TY TRÁCH NHIỆM HỮU HẠN BPE"><img src="./assets/images/logo.jpg"
+									alt="CÔNG TY TRÁCH NHIỆM HỮU HẠN BPE" class="png" /></a>
+						</div>
+						<div class="menu-search">
+							<div class="vnt-menu">
+								<ul>
+									<li class="current">
+										<a href="./trang-chu.html" target="_self">Trang chủ</a>
+									</li>
+									<li>
+										<a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
+									</li>
+									<li>
+										<a href="./san-pham.html" target="_self">Sản phẩm</a>
+									</li>
+									<li>
+										<a href="./chung-nhan.html" target="_self">Chứng
+											nhận</a>
+									</li>
+									<li>
+										<a href="./tin-tuc.html" target="_self">Tin tức</a>
+									</li>
+									<li>
+										<a href="./lien-he.html" target="_self">Liên hệ</a>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="menu_mobile">
+								<div class="icon_menu">
+									<span class="style_icon"></span>Menu
+								</div>
+							</div>
+							<div class="vnt-search">
+								<!--===BEGIN: FORM SEARCH==-->
+								<div class="formsearch">
+									<form id="formSearch" name="formSearch" method="post"
+										action="https://joyfood.com.vn/tim-kiem.html"
+										onSubmit="return check_search(this);" class="box_search">
+										<div class="wrap-form-search">
+											<div class="input-group">
+												<div class="input-group-btn">
+													<button style="
+																display: none;
+															" id="btn-search" name="btn-search" type="submit" class="btn" value="">
+														<span><i class="fa fa-search"></i></span>
+													</button>
+												</div>
+												<input name="keyword" id="keyword" type="text"
+													class="text_search form-control"
+													placeholder="Nhập từ khóa tìm kiếm..." value="" />
+												<span class="close-search"><a class="icon-close-search"
+														href="javascript:void(0);" title=""><i
+															class="fa fa-search"></i></a></span>
+											</div>
+											<input name="do_search" value="1" type="hidden" />
+											<div class="clear"></div>
+										</div>
+									</form>
+								</div>
+								<!--===END: FORM SEARCH==-->
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<!--=== END: HEADER ===-->
+			<div id="vnt-content">
+				<div class="vnt-banner">
+					<div id="vnt-banner">
+						<div class="item">
+							<div class="i-img">
+								<a href="http://" title="SỐNG XANH CÙNG HỘP BÃ MÍA GRACZ" class="phantom"><img
+										src="./assets/images/slide1.jpg" alt="SỐNG XANH CÙNG HỘP BÃ MÍA GRACZ" /></a>
+							</div>
+							<div class="i-desc">
+								<div class="wrapper">
+									<div class="animate_1">
+										<div class="wrap_desc">
+											<div class="i-title">
+												<h2>
+													SỐNG XANH CÙNG HỘP BÃ
+													MÍA GRACZ
+												</h2>
+											</div>
+											<div class="i-content"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="i-img">
+								<a href="http://" title="Chào Mừng Bạn Đến BPE" class="phantom"><img
+										src="./assets/images/slide3.jpg" alt="Chào Mừng Bạn Đến BPE" /></a>
+							</div>
+							<div class="i-desc">
+								<div class="wrapper">
+									<div class="animate_1">
+										<div class="wrap_desc">
+											<div class="i-title">
+												<h2>
+													Chào Mừng Bạn Đến BPE
+												</h2>
+											</div>
+											<div class="i-content">
+												SẢN PHẨM BAO BÌ THỰC PHẨM AN
+												TOÀN
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="i-img">
+								<a href="http://" title="HỘP BÃ MÍA KHÔNG CÁN MÀNG NHỰA" class="phantom"><img
+										src="./assets/images/slide5.jpg" alt="HỘP BÃ MÍA KHÔNG CÁN MÀNG NHỰA" /></a>
+							</div>
+							<div class="i-desc">
+								<div class="wrapper">
+									<div class="animate_1">
+										<div class="wrap_desc">
+											<div class="i-title">
+												<h2>
+													HỘP BÃ MÍA KHÔNG CÁN
+													MÀNG NHỰA
+												</h2>
+											</div>
+											<div class="i-content">
+												BẢO VỆ MÔI TRƯỜNG, GIẢM RÁC
+												THẢI NHỰA
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="i-img">
+								<a href="http://" title="NHẬN MẪU THỬ MIỄN PHÍ" class="phantom"><img
+										src="./assets/images/slide4.jpg" alt="NHẬN MẪU THỬ MIỄN PHÍ" /></a>
+							</div>
+							<div class="i-desc">
+								<div class="wrapper">
+									<div class="animate_1">
+										<div class="wrap_desc">
+											<div class="i-title">
+												<h2>
+													NHẬN MẪU THỬ MIỄN PHÍ
+												</h2>
+											</div>
+											<div class="i-content">
+												LIÊN HỆ NGAY ĐỂ NHẬN BÁO GIÁ
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="i-img">
+								<a href="http://" title="HỘP BÃ MÍA GIÁ RẺ NHẤT THỊ TRƯỜNG" class="phantom"><img
+										src="./assets/images/slide3.jpg" alt="HỘP BÃ MÍA GIÁ RẺ NHẤT THỊ TRƯỜNG" /></a>
+							</div>
+							<div class="i-desc">
+								<div class="wrapper">
+									<div class="animate_1">
+										<div class="wrap_desc">
+											<div class="i-title">
+												<h2>
+													HỘP BÃ MÍA GIÁ RẺ NHẤT
+													THỊ TRƯỜNG
+												</h2>
+											</div>
+											<div class="i-content">
+												AN TOÀN - TIỆN LỢI - THÂN
+												THIỆN MÔI TRƯỜNG
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="i-img">
+								<a href="http://" title="MỞ TIỆC CUỐI NĂM CÙNG HỘP BÃ MÍA BPE" class="phantom"><img
+										src="./assets/images/slide2.jpg"
+										alt="MỞ TIỆC CUỐI NĂM CÙNG HỘP BÃ MÍA BPE" /></a>
+							</div>
+							<div class="i-desc">
+								<div class="wrapper">
+									<div class="animate_1">
+										<div class="wrap_desc">
+											<div class="i-title">
+												<h2>
+													MỞ TIỆC CUỐI NĂM CÙNG
+													HỘP BÃ MÍA BPE
+												</h2>
+											</div>
+											<div class="i-content">
+												Liên hệ hotline: 090 943 80
+												00 để nhận mẫu thử miễn phí
+												ngay hôm nay&#33;
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feature-product">
+					<div class="wrapper">
+						<div class="title-main">
+							<h2>SẢN PHẨM MỚI</h2>
+						</div>
+						<div class="content-main">
+							<div id="slideProductFeature">
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url" href="https://joyfood.com.vn/hop-ba-mia-600-ml-.html"
+												title="Hộp Bã Mía (600 ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_WEB_B001_B001.jpg"
+													alt="Hộp Bã Mía (600 ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/hop-ba-mia-600-ml-.html">Hộp Bã Mía
+														(600
+														ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-ba-mia-600-ml-.html">ĐỌC TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/hop-ba-mia-2-ngan-1000-ml-.html"
+												title="Hộp Bã Mía 2 ngăn (1000 ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_hop-ba-mia-2-ngan-1000ml.jpg"
+													alt="Hộp Bã Mía 2 ngăn (1000 ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/hop-ba-mia-2-ngan-1000-ml-.html">Hộp
+														Bã Mía 2 ngăn
+														(1000 ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-ba-mia-2-ngan-1000-ml-.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url" href="https://joyfood.com.vn/hop-vuong-ba-mia-600ml-.html"
+												title="Hộp Vuông Bã Mía (600ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_hop-vuong-ba-mia-600ml.jpg"
+													alt="Hộp Vuông Bã Mía (600ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/hop-vuong-ba-mia-600ml-.html">Hộp
+														Vuông Bã Mía
+														(600ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-vuong-ba-mia-600ml-.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url" href="https://joyfood.com.vn/hop-ba-mia-oval-720ml-.html"
+												title="Hộp Bã Mía Oval (720ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_hop-ba-mia-oval.jpg"
+													alt="Hộp Bã Mía Oval (720ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/hop-ba-mia-oval-720ml-.html">Hộp Bã
+														Mía Oval
+														(720ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-ba-mia-oval-720ml-.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/hop-com-ba-mia-3-ngan-750ml.html"
+												title="Hộp Cơm Bã Mía 3 ngăn (750ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_hop-com-ba-mia-3-ngan-750ml.jpg"
+													alt="Hộp Cơm Bã Mía 3 ngăn (750ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/hop-com-ba-mia-3-ngan-750ml.html">Hộp
+														Cơm Bã Mía 3
+														ngăn (750ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-com-ba-mia-3-ngan-750ml.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/hop-ba-mia-chu-nhat-co-nap-600ml-.html"
+												title="Hộp Bã Mía chữ nhật có nắp (600ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/07/thumbs/370_WEB_T601_T601.jpg"
+													alt="Hộp Bã Mía chữ nhật có nắp (600ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/hop-ba-mia-chu-nhat-co-nap-600ml-.html">Hộp
+														Bã Mía chữ nhật
+														có nắp (600ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-ba-mia-chu-nhat-co-nap-600ml-.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/hop-com-ba-mia-chu-nhat-2-ngan-600ml-.html"
+												title="Hộp Cơm Bã Mía Chữ nhật 2 ngăn (600ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_WEB_T602_T602.jpg"
+													alt="Hộp Cơm Bã Mía Chữ nhật 2 ngăn (600ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/hop-com-ba-mia-chu-nhat-2-ngan-600ml-.html">Hộp
+														Cơm Bã Mía Chữ
+														nhật 2 ngăn
+														(600ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-com-ba-mia-chu-nhat-2-ngan-600ml-.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/dia-ba-mia-3-ngan-10-in-.html"
+												title="Đĩa Bã Mía 3 ngăn (10 in)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_WEB_P007_P007_1.jpg"
+													alt="Đĩa Bã Mía 3 ngăn (10 in)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/dia-ba-mia-3-ngan-10-in-.html">Đĩa
+														Bã Mía 3 ngăn
+														(10 in)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/dia-ba-mia-3-ngan-10-in-.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url" href="https://joyfood.com.vn/to-ba-mia-875ml-.html"
+												title="Tô Bã Mía (875ml)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_to-ba-mia-875ml.jpg"
+													alt="Tô Bã Mía (875ml)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/to-ba-mia-875ml-.html">Tô Bã Mía
+														(875ml)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/to-ba-mia-875ml-.html">ĐỌC TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="product" itemscope="" itemtype="http://schema.org/Product">
+										<div class="i-image">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/khay-ba-mia-phu-mang-7-8-in-m5-.html"
+												title="Khay Bã Mía phủ màng 7.8 in (M5)"><img itemprop="image"
+													src="https://joyfood.com.vn/vnt_upload/product/2021/03/thumbs/370_khay-ba-mia-m5.jpg"
+													alt="Khay Bã Mía phủ màng 7.8 in (M5)" /></a>
+										</div>
+										<div class="i-desc">
+											<div class="i-title">
+												<h3 itemprop="name">
+													<a itemprop="url"
+														href="https://joyfood.com.vn/khay-ba-mia-phu-mang-7-8-in-m5-.html">Khay
+														Bã Mía phủ
+														màng 7.8 in (M5)</a>
+												</h3>
+											</div>
+											<div class="i-price">
+												LIÊN HỆ
+											</div>
+											<div class="i-more">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/khay-ba-mia-phu-mang-7-8-in-m5-.html">ĐỌC
+													TIẾP</a>
+											</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-home">
+					<div class="wrapper">
+						<div class="title-main">
+							<h2>SẢN PHẨM CỦA <span>BPE</span></h2>
+						</div>
+						<div class="menuInMain">
+							<ul>
+								<li class="current">
+									<a href="https://joyfood.com.vn/hop-com-ba-mia-tu-phan-huy.html">Hộp Cơm Bã Mía</a>
+								</li>
+
+								<li class="">
+									<a href="https://joyfood.com.vn/dia-ba-mia-tu-phan-huy.html">Đĩa Bã Mía</a>
+								</li>
+
+								<li class="">
+									<a href="https://joyfood.com.vn/Ly-Ba-Mia.html">Ly Bã Mía</a>
+								</li>
+
+								<li class="">
+									<a href="https://joyfood.com.vn/to-ba-mia-tu-phan-huy.html">Tô Bã Mía</a>
+								</li>
+
+								<li class="">
+									<a href="https://joyfood.com.vn/khay-ba-mia-tu-phan-huy.html">Khay Bã Mía</a>
+								</li>
+
+								<li class="">
+									<a href="https://joyfood.com.vn/dung-cu-an-uong-dung-1-lan.html">Dụng cụ ăn uống
+										dùng 1 lần</a>
+								</li>
+							</ul>
+						</div>
+						<div class="gird-product w_effect_up show">
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<a itemprop="url" href="https://joyfood.com.vn/khay-ba-mia-2-ngan.html"
+											title="Khay bã mía 2 ngăn"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2023/11/thumbs/370_T200-01.png"
+												alt="Khay bã mía 2 ngăn" /></a>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/khay-ba-mia-2-ngan.html">Khay bã mía 2
+													ngăn</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url" href="https://joyfood.com.vn/khay-ba-mia-2-ngan.html">ĐỌC
+												TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<a itemprop="url" href="https://joyfood.com.vn/to-ba-mia-chu-nhat-850-ml.html"
+											title="Tô bã mía chữ nhật 850 ml"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2023/11/thumbs/370_L008-03.png"
+												alt="Tô bã mía chữ nhật 850 ml" /></a>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/to-ba-mia-chu-nhat-850-ml.html">Tô bã
+													mía chữ nhật 850
+													ml</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/to-ba-mia-chu-nhat-850-ml.html">ĐỌC
+												TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<a itemprop="url" href="https://joyfood.com.vn/nap-ba-mia-khay-chu-nhat.html"
+											title="Nắp bã mía khay chữ nhật"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2019/03/thumbs/370_J300-07.png"
+												alt="Nắp bã mía khay chữ nhật" /></a>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/nap-ba-mia-khay-chu-nhat.html">Nắp bã
+													mía khay chữ
+													nhật</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/nap-ba-mia-khay-chu-nhat.html">ĐỌC TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<a itemprop="url" href="https://joyfood.com.vn/nap-ba-mia-to-850ml.html"
+											title="Nắp bã mía tô 850ml"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2023/11/thumbs/370_J008-05.png"
+												alt="Nắp bã mía tô 850ml" /></a>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/nap-ba-mia-to-850ml.html">Nắp bã mía tô
+													850ml</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url" href="https://joyfood.com.vn/nap-ba-mia-to-850ml.html">ĐỌC
+												TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<a itemprop="url" href="https://joyfood.com.vn/dao-g-dung-mot-lan.html"
+											title="DAO GỖ DÙNG MỘT LẦN"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2022/08/thumbs/370_KB001.png"
+												alt="DAO GỖ DÙNG MỘT LẦN" /></a>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/dao-g-dung-mot-lan.html">DAO GỖ DÙNG
+													MỘT LẦN</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url" href="https://joyfood.com.vn/dao-g-dung-mot-lan.html">ĐỌC
+												TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<a itemprop="url" href="https://joyfood.com.vn/khay-ba-mia-750ml.html"
+											title="Khay Bã Mía 750ml"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2022/06/thumbs/370_khay-ba-mia-t408.jpg"
+												alt="Khay Bã Mía 750ml" /></a>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/khay-ba-mia-750ml.html">Khay Bã Mía
+													750ml</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url" href="https://joyfood.com.vn/khay-ba-mia-750ml.html">ĐỌC
+												TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<a itemprop="url" href="https://joyfood.com.vn/khay-ba-mia-1000ml.html"
+											title="Khay Bã Mía 1000ml"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2022/06/thumbs/370_T100.png"
+												alt="Khay Bã Mía 1000ml" /></a>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/khay-ba-mia-1000ml.html">Khay Bã Mía
+													1000ml</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url" href="https://joyfood.com.vn/khay-ba-mia-1000ml.html">ĐỌC
+												TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+
+							<div class="wrap_item effect_up">
+								<div class="product" itemscope="" itemtype="http://schema.org/Product">
+									<div class="i-image">
+										<div class="icon_status"></div>
+										<a itemprop="url" href="https://joyfood.com.vn/hop-ba-mia-1-ngan-750ml-.html"
+											title="Hộp bã mía 1 ngăn (750ml)"><img itemprop="image"
+												src="https://joyfood.com.vn/vnt_upload/product/2021/11/thumbs/370_T759.png"
+												alt="Hộp bã mía 1 ngăn (750ml)" /></a>
+										<div class="src_status">
+											<img src="./assets/images/logo.jpg" alt="" />
+										</div>
+									</div>
+									<div class="i-desc">
+										<div class="i-title">
+											<h3 itemprop="name">
+												<a itemprop="url"
+													href="https://joyfood.com.vn/hop-ba-mia-1-ngan-750ml-.html">Hộp bã
+													mía 1 ngăn
+													(750ml)</a>
+											</h3>
+										</div>
+										<div class="i-price">LIÊN HỆ</div>
+										<div class="i-more">
+											<a itemprop="url"
+												href="https://joyfood.com.vn/hop-ba-mia-1-ngan-750ml-.html">ĐỌC TIẾP</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="view-detail effect_up" style="
+										transition-delay: 1.6s;
+										animation-duration: 3.3s;
+									">
+								<a href="./san-pham.html" title="" class="view-more hvr-shutter-out-vertical">Xem tất
+									cả</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="news lazyloading">
+					<div class="wrapper">
+						<div class="title-main lazyloading">
+							<h2>Tin tức mới nhất</h2>
+						</div>
+						<div class="news_wrap w_effect_up">
+							<div class="row">
+								<div class="news_l col-xs-12 col-sm-6 col-md-6">
+									<div class="item">
+										<div class="news-item effect_up">
+											<div itemscope itemtype="http://schema.org/Article">
+												<div class="i-img" itemprop="image" itemscope
+													itemtype="https://schema.org/ImageObject">
+													<a
+														href="https://joyfood.com.vn/mia-han-hanh-tham-du-trien-lam-greco-2023.html"><img
+															itemprop="url"
+															src="https://joyfood.com.vn/vnt_upload/news/09_2023/08/trien-lam-greco-2023.png"
+															alt="MÍA HÂN HẠNH THAM DỰ TRIỄN LÃM GRECO 2023" />
+														<div>
+															<meta itemprop="datePublished" content="2023/09/08" /><span
+																class="date">08/09/2023</span>
+														</div>
+													</a>
+												</div>
+												<div class="i-desc">
+													<div class="i-title">
+														<h3 itemprop="headline">
+															<a itemprop="url"
+																href="https://joyfood.com.vn/mia-han-hanh-tham-du-trien-lam-greco-2023.html">MÍA
+																HÂN
+																HẠNH THAM DỰ
+																TRIỄN LÃM
+																GRECO
+																2023</a>
+														</h3>
+													</div>
+													<div itemprop="description" class="i-content">
+														Nằm trong chuỗi sự
+														kiện nỗ lực vì thành
+														phố xanh - sạch -
+														đẹp. Ngày 13 tháng
+														9, 20023, Thành phố
+														ra mắt triễn lãm
+														GRECO - Triễn lãm
+														sản phẩm, dịch vụ
+														tăng tưởng xanh
+														2023. Đây có thể
+														được xem ...
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="news_r col-xs-12 col-sm-6 col-md-6">
+									<div class="item">
+										<div class="news-item effect_up">
+											<div class="item_info" itemscope itemtype="http://schema.org/Article">
+												<div class="i-img" itemprop="image" itemscope
+													itemtype="https://schema.org/ImageObject">
+													<a
+														href="https://joyfood.com.vn/-ban-tin-xanh-34-viet-nam-trong-n-luc-song-xanh-vi-moi-truong.html"><img
+															itemprop="url"
+															src="https://joyfood.com.vn/vnt_upload/news/12_2022/22/xong-xanh-1.jpg"
+															alt="[BẢN TIN XANH #34] VIỆT NAM TRONG NỖ LỰC SỐNG XANH VÌ MÔI TRƯỜNG" />
+														<div>
+															<meta itemprop="datePublished" content="2022/12/22" /><span
+																class="date">22/12/2022</span>
+														</div>
+													</a>
+												</div>
+												<div class="i-desc">
+													<div class="i-title">
+														<h3 itemprop="headline">
+															<a itemprop="url"
+																href="https://joyfood.com.vn/-ban-tin-xanh-34-viet-nam-trong-n-luc-song-xanh-vi-moi-truong.html">[BẢN
+																TIN
+																XANH #34]
+																VIỆT NAM
+																TRONG NỖ LỰC
+																SỐNG XANH VÌ
+																MÔI
+																TRƯỜNG</a>
+														</h3>
+													</div>
+													<div itemprop="description" class="i-content">
+														Việt Nam đã và đang
+														nỗ lực không ngừng
+														trong việc đưa ra
+														loạt tiêu chí cũng
+														như biện pháp để
+														phát triển lâu dài
+														và bền vững.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="news-item effect_up">
+											<div class="item_info" itemscope itemtype="http://schema.org/Article">
+												<div class="i-img" itemprop="image" itemscope
+													itemtype="https://schema.org/ImageObject">
+													<a
+														href="https://joyfood.com.vn/o-nhiem-vi-nhua-dang-tien-gan-muc-bao-dong-do.html"><img
+															itemprop="url"
+															src="https://joyfood.com.vn/vnt_upload/news/11_2022/11/o-nhiem-vi-nhua-1_1.png"
+															alt="[BẢN TIN XANH #33] Ô NHIỄM VI NHỰA ĐANG TIẾN GẦN MỨC BÁO ĐỘNG ĐỎ" />
+														<div>
+															<meta itemprop="datePublished" content="2022/11/11" /><span
+																class="date">11/11/2022</span>
+														</div>
+													</a>
+												</div>
+												<div class="i-desc">
+													<div class="i-title">
+														<h3 itemprop="headline">
+															<a itemprop="url"
+																href="https://joyfood.com.vn/o-nhiem-vi-nhua-dang-tien-gan-muc-bao-dong-do.html">[BẢN
+																TIN
+																XANH #33] Ô
+																NHIỄM VI
+																NHỰA ĐANG
+																TIẾN GẦN MỨC
+																BÁO ĐỘNG
+																ĐỎ</a>
+														</h3>
+													</div>
+													<div itemprop="description" class="i-content">
+														Cùng BPE điểm
+														qua một số tin liên
+														quan đến ô nhiễm vi
+														nhựa trong bài viết
+														này nhé!
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="item">
+										<div class="news-item effect_up">
+											<div class="item_info" itemscope itemtype="http://schema.org/Article">
+												<div class="i-img" itemprop="image" itemscope
+													itemtype="https://schema.org/ImageObject">
+													<a
+														href="https://joyfood.com.vn/song-xanh-de-duy-tri-da-dang-sinh-hoc-toan-cau.html"><img
+															itemprop="url"
+															src="https://joyfood.com.vn/vnt_upload/news/11_2022/10/song-xanh_1.jpg"
+															alt="[BẢN TIN XANH #32] SỐNG XANH ĐỂ DUY TRÌ ĐA DẠNG SINH HỌC TOÀN CẦU" />
+														<div>
+															<meta itemprop="datePublished" content="2022/11/10" /><span
+																class="date">10/11/2022</span>
+														</div>
+													</a>
+												</div>
+												<div class="i-desc">
+													<div class="i-title">
+														<h3 itemprop="headline">
+															<a itemprop="url"
+																href="https://joyfood.com.vn/song-xanh-de-duy-tri-da-dang-sinh-hoc-toan-cau.html">[BẢN
+																TIN
+																XANH #32]
+																SỐNG XANH ĐỂ
+																DUY TRÌ ĐA
+																DẠNG SINH
+																HỌC TOÀN
+																CẦU</a>
+														</h3>
+													</div>
+													<div itemprop="description" class="i-content">
+														Cùng BPE điểm
+														qua những thông tin
+														mới nhất về bản tin
+														tuần này để hiểu
+														thêm ý nghĩa của
+														việc sống xanh nhé!
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="view-detail effect_up">
+								<a href="./tin-tuc.html" title="" class="view-more hvr-shutter-out-vertical">Xem tất
+									cả</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="intro lazyloading">
+					<div class="wrapper">
+						<div class="sub-intro w_effect_up">
+							<div class="left-intro effect_up">
+								<div class="title-intro">
+									<h2>Công Ty TNHH BPE</h2>
+									<h3></h3>
+								</div>
+								<p>
+									Công ty TNHH BPE chuyên về lĩnh
+									vực thương mại Nhập Khẩu và Phân Phối
+									các Bao Bì Thực Phẩm tự phân hủy, thân
+									thiện với môi trường. Chúng tôi mong
+									mong muốn mang đến cho khách hàng giảip
+									pháp AN TOÀN- TIỆN LỢI- THÂN THIỆN MÔI
+									TRƯỜNG cho sản phẩm bao bì dùng một lần,
+									đem đến những món ăn NGON MIỆNG - BỔ
+									DƯỠNG, đảm bảo an toàn sức khỏe của bạn
+									qua các dòng sản phẩm công ty chúng tôi
+									đang phân phối. Sản phẩm của BPE
+									cung ứng trong hệ thống resort, khách
+									sạn 5 sao, các chuỗi nhà hàng,
+									food-court, đối tác hệ thống giao hàng
+									thực phẩm và hệ thống siêu thị trên toàn
+									quốc.
+								</p>
+								<a href="./gioi-thieu.html" title="" class="view-more hvr-shutter-out-vertical">Xem
+									thêm</a>
+							</div>
+							<div class="right-intro effect_up">
+								<div id="about_pic">
+									<a href="" title=""><img
+											src="https://joyfood.com.vn/vnt_upload/about/Screenshot_1.png" alt="" /></a>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<!--== end intro ==-->
+
+				<div class="clear"></div>
+			</div>
+			<!--=== BEGIN: FOOTER ===-->
+			<div id="vnt-footer">
+				<div class="main-footer">
+					<div class="wrapper">
+						<div class="sub-main-ft">
+							<div class="info-company">
+								<div class="sub-info">
+									<div class="name">
+										CÔNG TY TNHH BPE - TRỤ SỞ CHÍNH
+									</div>
+									<div class="before fa-home">
+										B2/1, đường 385, phường Tăng Nhơn Phú A, TP Thủ Đức, TP. Hồ Chí Minh, Việt Nam
+									</div>
+									<div class="before fa-phone">
+										0909 438 000
+									</div>
+									<div class="before fa-envelope">
+										<a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+											data-cfemail="8cefffe7e4cce6e3f5eae3e3e8a2efe3e1a2fae2">bpecompanylimited@gmail.com</a>
+									</div>
+									<div class="footer_view_map">
+										<a href="https://joyfood.com.vn/lien-he.html#viewmap" title="">Xem bản đồ</a>
+									</div>
+								</div>
+								<div class="sub-info">
+									<div class="name chinhanh">
+										CÔNG TY BPE - Chi Nhánh Miền
+										Bắc
+									</div>
+									<div class="before fa-home">
+										P801, Tòa nhà Hoa Cương, số 80b
+										Đường Nguyễn Văn Cừ, Phường Bồ Đề,
+										Quận Long Biên, Hà Nội
+									</div>
+									<div class="before fa-phone">
+										0909 438 000
+									</div>
+									<div class="before fa-envelope">
+										<a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+											data-cfemail="9cffeff7f4dcf6f3e5faf3f3f8b2fff3f1b2eaf2">bpecompanylimited@gmail.com</a>
+									</div>
+									<div class="footer_view_map">
+										<a href="https://joyfood.com.vn/lien-he.html#viewmap" title="">Xem bản đồ</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="row-ft row-hidden">
+								<div class="wrap-row">
+									<div class="sub-row-ft">
+										<div class="title-row-ft">
+											<h3>Giới thiệu</h3>
+										</div>
+										<ul>
+											<li>
+												<a href="./gioi-thieu.html" target="_self"><span>Về
+														BPE</span></a>
+											</li>
+											<li>
+												<a href="https://joyfood.com.vn/tam-nhin-su-menh.html"
+													target="_self"><span>Sứ mệnh - Tầm
+														nhìn</span></a>
+											</li>
+											<li>
+												<a href="https://joyfood.com.vn/chung-nhan-chat-luong.html"
+													target="_self"><span>Chứng nhận chất
+														lượng</span></a>
+											</li>
+										</ul>
+									</div>
+									<div class="sub-row-ft">
+										<div class="title-row-ft">
+											<h3>Chính sách</h3>
+										</div>
+										<ul>
+											<li>
+												<a href="https://joyfood.com.vn/chinh-sach-thanh-toan.html"
+													target="_self"><span>Chính sách thanh
+														toán</span></a>
+											</li>
+											<li>
+												<a href="https://joyfood.com.vn/chinh-sach-bao-mat-thong-tin.html"
+													target="_self"><span>Chính sách bảo mật
+														thông tin</span></a>
+											</li>
+											<li>
+												<a href="https://joyfood.com.vn/chinh-sach-van-chuyen.html"
+													target="_self"><span>Chính sách vận
+														chuyển</span></a>
+											</li>
+										</ul>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="social-row-ft">
+								<div class="title-row-ft">
+									<h3>Kết nối trên mạng xã hội</h3>
+								</div>
+								<ul class="social-ft">
+									<li data-color="#3b5998">
+										<a href="https://www.facebook.com/joyfood/" title=""><i class="fa fa-facebook"
+												aria-hidden="true"></i></a>
+									</li>
+									<li data-color="#e33e2b">
+										<a href="https://google.com" title=""><i class="fa fa-google-plus"
+												aria-hidden="true"></i></a>
+									</li>
+									<li data-color="#d20001">
+										<a href="https://www.youtube.com/channel/UC66gdsIMMc3jLPrQVIfY0Gg/featured"
+											title=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+									</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="bocongthuong">
+					<div class="wrapper">
+						<div class="b-img">
+							<a onmousedown="return rwt(this,'advertise',7)"
+								href="http://online.gov.vn/Home/WebDetails/69283" target="_blank" title="">
+								<img src="https://joyfood.com.vn/vnt_upload/weblink/bocongthuong.png" alt=""
+									class="png" /></a>
+						</div>
+						<div class="b-text">
+							Giấy phép kinh doanh số: 0314402905 cấp ngày
+							15/05/2017 bởi Sở Kế hoạch và Đầu Tư TP.Hồ Chí
+							Minh.<br />Người đại diện: Chủ tịch: Vũ Thị Hạnh </div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="copyright-social">
+					<div class="wrapper">
+						<div class="copyright">
+							<div class="inline-block">
+								Copyright © 2017 <span>BPE</span>
+							</div>
+							<div class="inline-block">
+								-
+								<a href="http://www.thietkeweb.com" target="_blank" title="thiet ke web" rel="dofollow"
+									class="thietkeweb">Thiết kế web :</a>
+								<strong><a href="http://www.trust.vn" target="_blank" rel="dofollow">TRUST.vn</a>
+								</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--=== END: FOOTER ===-->
+			<div class="menu_mobile">
+				<div class="divmm">
+					<div class="mmContent">
+						<div class="mmMenu">
+							<div class="logo_langues">
+								<div class="ll_langues">
+									<ul class="sub-ll_langues">
+										<li>
+											<a href="https://joyfood.com.vn/vn/trang-chu.html"><img
+													src="https://joyfood.com.vn/vnt_upload/lang/flag1.png"
+													alt="vn" />Tiếng Việt</a>
+										</li>
+									</ul>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<ul>
+								<ul>
+									<li class="current">
+										<a href="https://joyfood.com.vn/trang-chu.html" target="_self">Trang chủ</a>
+									</li>
+									<li>
+										<a href="https://joyfood.com.vn/gioi-thieu.html" target="_self">Giới thiệu</a>
+									</li>
+									<li>
+										<a href="https://joyfood.com.vn/san-pham.html" target="_self">Sản phẩm</a>
+									</li>
+									<li>
+										<a href="https://joyfood.com.vn/chung-nhan-chat-luong.html" target="_self">Chứng
+											nhận</a>
+									</li>
+									<li>
+										<a href="https://joyfood.com.vn/tin-tuc.html" target="_self">Tin tức</a>
+									</li>
+									<li>
+										<a href="https://joyfood.com.vn/lien-he.html" target="_self">Liên hệ</a>
+									</li>
+								</ul>
+							</ul>
+							<div class="search-hotline">
+								<div class="sh_search">
+									<script data-cfasync="false"
+										src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+									<script language="javascript">
+										function check_search(f) {
+											var key_default =
+												'Nhập từ khóa tìm kiếm...'
+											var keyword = f.keyword.value
+											var key_len =
+												f.keyword.value.length
+											if (
+												keyword == key_default ||
+												keyword == ''
+											) {
+												alert(
+													'Vui lòng nhập từ khóa'
+												)
+												f.keyword.focus()
+												return false
+											}
+											if (key_len < 2) {
+												alert(
+													'Từ khóa tới thiểu là 2 ký tự'
+												)
+												f.keyword.focus()
+												return false
+											}
+											return true
+										}
+									</script>
+									<form id="formSearch" name="formSearch" method="post"
+										action="https://joyfood.com.vn/tim-kiem.html"
+										onSubmit="return check_search(this);" class="box_search">
+										<div class="input-group">
+											<input name="do_search" value="1" type="hidden" />
+											<input type="text" name="keyword" id="keyword" class="form-control"
+												placeholder="Nhập từ khóa tìm kiếm..." />
+											<div class="input-group-btn">
+												<button type="submit" name="btn-search" id="btn-search" class="btn"
+													value="Tìm">
+													<span><i class="fa fa-search"></i></span>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="close-mmenu">
+							<div class="icon_menu_close">
+								<span class="style_icon"></span>Close
+							</div>
+						</div>
+					</div>
+					<div class="divmmbg"></div>
+				</div>
+			</div>
+			<div class="support-hotline">
+				<div class="div_title">
+					<span class="icon"><i class="fa fa-whatsapp"></i></span>
+					<span class="text">Hotline</span>
+				</div>
+				<div class="div_content">
+					<div class="title_hotline">Hotline:</div>
+					<div class="number_phone">0909 438 000</div>
+					<div class="yahoo_skype">
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

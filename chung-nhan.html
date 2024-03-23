@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <title>Chứng nhận</title>
+    <style type="text/css">
+        .sub-info:last-child {
+            display: none;
+        }
+
+        div#vnt-header>.main-header .logo {
+            max-width: 95px;
+            margin-top: 0px;
+        }
+
+        .product .i-image {
+            background: none !important;
+        }
+
+        .product .src_status {
+            top: 30px !important;
+            right: 40px !important;
+        }
+
+        .product .src_status img {
+            max-width: 55px !important;
+        }
+    </style>
+    <link href="./assets/styles/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="https://joyfood.com.vn/skins/default/style/screen.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/slick.css" type="text/css" rel="stylesheet" />
+    <link href="./assets/styles/slick-theme.css" type="text/css" rel="stylesheet" />
+    <script
+        language="javascript"> var ROOT = "https://joyfood.com.vn/"; var ROOT_MOD = "https://joyfood.com.vn/chung-nhan-chat-luong"; var ROOT_PROD = ""; var url = ""; var actmod = ""; var DIR_IMAGE = "https://joyfood.com.vn/skins/default/images"; var cmd = "vnTRUST"; var lang = "vn"; var mem_id = 0; var hotline = "0909 438 000"; var messenger = ""; var zalo = ""; var skype = ""; var email = "cskh@joyfood.com.vn; huu.ha@joyfood.com.vn"; var js_lang = new Array(); js_lang['announce'] = "Thông báo"; js_lang['error'] = "Báo lỗi"; </script>
+
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="./assets/js/boostrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="./assets/js/core.js"></script>
+    <script type="text/javascript" src="./assets/js/slideSlick/js/slick.js"></script>
+    <script type="text/javascript" src="./assets/js/javascript.js"></script>
+    <link rel="stylesheet" href="https://joyfood.com.vn/modules/certify/css/certify.css" type="text/css" />
+    <script type="text/javascript" src="https://joyfood.com.vn/modules/certify/js/certify.js"></script>
+    <script type="text/javascript" src="./assets/js/lazingloading/jquery.lazyscrollloading.js"></script>
+    <script type="text/javascript">
+
+        var arr_cat = { 13: 'https://joyfood.com.vn/dung-cu-an-uong-dung-1-lan.html', 12: 'https://joyfood.com.vn/khay-ba-mia-tu-phan-huy.html', 10: 'https://joyfood.com.vn/to-ba-mia-tu-phan-huy.html', 8: 'https://joyfood.com.vn/Ly-Ba-Mia.html', 7: 'https://joyfood.com.vn/dia-ba-mia-tu-phan-huy.html', 6: 'https://joyfood.com.vn/hop-com-ba-mia-tu-phan-huy.html' };
+        var arr_title_cat = { 0: '', 13: 'Dụng cụ ăn uống dùng 1 lần', 12: 'Khay Bã Mía', 10: 'Tô Bã Mía', 8: 'Ly Bã Mía', 7: 'Đĩa Bã Mía', 6: 'Hộp Cơm Bã Mía' };
+
+
+        var arr_input = ['p', 'catID', 'price', 'status_id', 'statusID', 'brand_id', 'bID', 'sort', 'vpage'];
+
+    </script>
+
+</head>
+
+<body>
+    <div id="vnt-wrapper">
+        <div id="vnt-container">
+            <!--=== BEGIN: HEADER ===-->
+            <div id="vnt-header">
+                <div class="top-header">
+                    <div class="wrapper">
+                        <div class="vnt-hotline">
+                            <div class="hotline">Hotline: <span>0909 438 000</span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="main-header">
+                    <div class="wrapper">
+                        <div class="logo">
+                            <a onmousedown="return rwt(this,'advertise',1)" href='./trang-chu.html' target='_self'
+                                title='CÔNG TY TNHH MỘT BPE'><img src='./assets/images/logo.jpg' alt='CÔNG TY TNHH BPE'
+                                    class='png' /></a>
+                        </div>
+                        <div class="menu-search">
+                            <div class="vnt-menu">
+                                <ul>
+                                    <li>
+                                        <a href="./trang-chu.html" target="_self">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="./san-pham.html" target="_self">Sản phẩm</a>
+                                    </li>
+                                    <li class="current">
+                                        <a href="./chung-nhan.html" target="_self">Chứng
+                                            nhận</a>
+                                    </li>
+                                    <li>
+                                        <a href="./tin-tuc.html" target="_self">Tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a href="./lien-he.html" target="_self">Liên hệ</a>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="menu_mobile">
+                                <div class="icon_menu"><span class="style_icon"></span>Menu</div>
+                            </div>
+                            <div class="vnt-search">
+                                <!--===BEGIN: FORM SEARCH==-->
+                                <div class="formsearch">
+
+                                    <form id="formSearch" name="formSearch" method="post"
+                                        action="https://joyfood.com.vn/tim-kiem.html"
+                                        onSubmit="return check_search(this);" class="box_search">
+                                        <div class="wrap-form-search">
+                                            <div class="input-group">
+                                                <div class="input-group-btn">
+                                                    <button style="display:none" id="btn-search" name="btn-search"
+                                                        type="submit" class="btn" value=""><span><i
+                                                                class="fa fa-search"></i></span></button>
+                                                </div>
+                                                <input name="keyword" id="keyword" type="text"
+                                                    class="text_search form-control"
+                                                    placeholder="Nhập từ khóa tìm kiếm..." value="">
+                                                <span class="close-search"><a class="icon-close-search"
+                                                        href="javascript:void(0);" title=""><i
+                                                            class="fa fa-search"></i></a></span>
+                                            </div>
+                                            <input name="do_search" value="1" type="hidden">
+                                            <div class="clear"></div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <!--===END: FORM SEARCH==-->
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!--=== END: HEADER ===-->
+            <div id="vnt-content">
+
+                <!--=== BEGIN: BANNER ===-->
+                <div class="vnt-banner-page">
+                    <div class="slide-banner-page">
+                        <div class="item">
+                            <div class="i-img"><a href="./trang-chu.html" title=""><img src="./assets/images/slide5.jpg"
+                                        alt=""></a></div>
+                        </div>
+                    </div>
+                    <!--===BEGIN: BREADCRUMB===-->
+                    <div id="vnt-navation" class="breadcrumb" itemscope=""
+                        itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <div class="wrapper">
+                            <div class="navation">
+                                <ul>
+                                    <li><a href="https://joyfood.com.vn/">Trang chủ</a></li>
+                                    <li>Giấy chứng nhận</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--===END: BREADCRUMB===-->
+                </div>
+                <!--=== END: BANNER ===-->
+                <!--===BEGIN: BOX MAIN===-->
+                <div class="mod-content">
+                    <div class="wrapper">
+                        <div class="box_row">
+                            <div class="vnt-main_tt">
+
+                                <div class="box_mid">
+                                    <div class="wrapper">
+                                        <div class="mid-title">
+                                            <div class="titleL_cn">Giấy chứng nhận</div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="slogan_certify">Bao bì thực phẩm tự phân hủy từ bã mía đã được kiểm
+                                            chứng kĩ lưỡng về chất lượng, đáp ứng mọi tiêu chuẩn khắt khe của các đơn
+                                            vị, tổ chức kiểm định quốc tế. Với mong muốn mang đến cho người tiêu dùng
+                                            những sản phẩm AN TOÀN SỨC KHỎE- BẢO VỆ MÔI TRƯỜNG, tất cả các bao bì của
+                                            BPE cung cấp đạt đủ các tiêu chuẩn và chứng chỉ về An toàn vệ sinh thực
+                                            phẩm: HACCP, ISO 22000, ISO 9001, BRC, Halal, OK-Home Compost, DIN-CERTO.
+                                        </div>
+                                        <div class="mid-content">
+                                            <div class="certify">
+                                                <div class="item">
+                                                    <div class="i-img" itemprop="image" itemscope
+                                                        itemtype="https://schema.org/ImageObject">
+                                                        <div class="sub-img">
+                                                            <a
+                                                                href="https://joyfood.com.vn/chung-nhan-chat-luong/popup.html/?do=certify&certifyid=91"><img
+                                                                    src="https://joyfood.com.vn/vnt_upload/certify/01_2021/22/BPI_Certificate_Valid_2023.jpg"
+                                                                    itemprop="url" alt='BPI COMPOSTABLE'
+                                                                    title='BPI COMPOSTABLE' /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="i-img" itemprop="image" itemscope
+                                                        itemtype="https://schema.org/ImageObject">
+                                                        <div class="sub-img">
+                                                            <a
+                                                                href="https://joyfood.com.vn/chung-nhan-chat-luong/popup.html/?do=certify&certifyid=90"><img
+                                                                    src="https://joyfood.com.vn/vnt_upload/certify/09_2020/24/ISO_22000.jpg"
+                                                                    itemprop="url" alt='CHỨNG NHẬN HACCP'
+                                                                    title='CHỨNG NHẬN HACCP' /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="i-img" itemprop="image" itemscope
+                                                        itemtype="https://schema.org/ImageObject">
+                                                        <div class="sub-img">
+                                                            <a
+                                                                href="https://joyfood.com.vn/chung-nhan-chat-luong/popup.html/?do=certify&certifyid=89"><img
+                                                                    src="https://joyfood.com.vn/vnt_upload/certify/09_2020/24/BiobasedDIN-CERTCO_Valid_2023_-_ChuYYng_chiY_quoYYc_teYY_veYY_vaYYt_lieYYu_sinh_hoYc.jpg"
+                                                                    itemprop="url" alt='CHỨNG NHẬN DIN CERTCO'
+                                                                    title='CHỨNG NHẬN DIN CERTCO' /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="i-img" itemprop="image" itemscope
+                                                        itemtype="https://schema.org/ImageObject">
+                                                        <div class="sub-img">
+                                                            <a
+                                                                href="https://joyfood.com.vn/chung-nhan-chat-luong/popup.html/?do=certify&certifyid=88"><img
+                                                                    src="https://joyfood.com.vn/vnt_upload/certify/09_2020/24/HALALEng_Valid_2022-ChuYYng_chiY_saYn_phaYYm_duYng_cho_YaYo_HoYYi.jpg"
+                                                                    itemprop="url" alt='CHỨNG NHẬN HALAL'
+                                                                    title='CHỨNG NHẬN HALAL' /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="i-img" itemprop="image" itemscope
+                                                        itemtype="https://schema.org/ImageObject">
+                                                        <div class="sub-img">
+                                                            <a
+                                                                href="https://joyfood.com.vn/chung-nhan-chat-luong/popup.html/?do=certify&certifyid=87"><img
+                                                                    src="https://joyfood.com.vn/vnt_upload/certify/09_2020/24/BRC_IOP_Valid_2022_-_TieYu_chuaYYn_toaYn_caYYu_veYY_an_toaYn_veYY_sinh_thuYYc_phaYYm.jpg"
+                                                                    itemprop="url" alt='TIÊU CHUẨN BRC'
+                                                                    title='TIÊU CHUẨN BRC' /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="i-img" itemprop="image" itemscope
+                                                        itemtype="https://schema.org/ImageObject">
+                                                        <div class="sub-img">
+                                                            <a
+                                                                href="https://joyfood.com.vn/chung-nhan-chat-luong/popup.html/?do=certify&certifyid=86"><img
+                                                                    src="https://joyfood.com.vn/vnt_upload/certify/09_2020/24/OK_COMPOST_HOME_Valid_2024_-_ChuYYng_chiY_quoYYc_teYY_vaYYt_lieYYu_tuYY_phaYn_huYy.jpg"
+                                                                    itemprop="url" alt='OK Compost HOME'
+                                                                    title='OK Compost HOME' /></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <!--=== BEGIN: FOOTER ===-->
+            <div id="vnt-footer">
+                <div class="main-footer">
+                    <div class="wrapper">
+                        <div class="sub-main-ft">
+                            <div class="info-company">
+                                <div class="sub-info">
+                                    <div class="name ">CÔNG TY TNHH BPE - VĂN PHÒNG CHÍNH</div>
+                                    <div class="before fa-home">B2/1, đường 385, phường Tăng Nhơn Phú A, TP Thủ Đức, TP.
+                                        Hồ Chí Minh, Việt Nam
+                                    </div>
+                                    <div class="before fa-phone">0909 438 000 - (028)7303 0079</div>
+                                    <div class="before fa-envelope"><a href="/cdn-cgi/l/email-protection"
+                                            class="__cf_email__"
+                                            data-cfemail="d0b3a3bbb890babfa9b6bfbfb4feb3bfbdfea6be">bpecompanylimited@gmail.com</a>
+                                    </div>
+                                    <div class="footer_view_map"><a href="./lien-he.html" title="">Xem bản đồ</a></div>
+                                </div>
+                                <div class="sub-info">
+                                    <div class="name  chinhanh">CÔNG TY TNHH BPE - Chi Nhánh Miền Bắc</div>
+                                    <div class="before fa-home">P801, Tòa nhà Hoa Cương, số 80b Đường Nguyễn Văn Cừ,
+                                        Phường Bồ Đề, Quận Long Biên, Hà Nội</div>
+                                    <div class="before fa-phone">0909 438 000</div>
+                                    <div class="before fa-envelope"><a href="/cdn-cgi/l/email-protection"
+                                            class="__cf_email__"
+                                            data-cfemail="8be8f8e0e3cbe1e4f2ede4e4efa5e8e4e6a5fde5">bpecompanylimited@gmail.com</a>
+                                    </div>
+                                    <div class="footer_view_map"><a href="./lien-he.html" title="">Xem bản đồ</a></div>
+                                </div>
+                            </div>
+
+                            <div class="row-ft row-hidden">
+                                <div class="wrap-row">
+                                    <div class="sub-row-ft">
+                                        <div class="title-row-ft">
+                                            <h3>Giới thiệu</h3>
+                                        </div>
+                                        <ul>
+                                            <li><a href="./gioi-thieu.html" target="_self"><span>Về
+                                                        BPE</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/tam-nhin-su-menh.html"
+                                                    target="_self"><span>Sứ mệnh - Tầm nhìn</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/chung-nhan-chat-luong.html"
+                                                    target="_self"><span>Chứng nhận chất lượng</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-row-ft">
+                                        <div class="title-row-ft">
+                                            <h3>Chính sách</h3>
+                                        </div>
+                                        <ul>
+                                            <li><a href="https://joyfood.com.vn/chinh-sach-thanh-toan.html"
+                                                    target="_self"><span>Chính sách thanh toán</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/chinh-sach-bao-mat-thong-tin.html"
+                                                    target="_self"><span>Chính sách bảo mật thông tin</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/chinh-sach-van-chuyen.html"
+                                                    target="_self"><span>Chính sách vận chuyển</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="social-row-ft">
+                                <div class="title-row-ft">
+                                    <h3>Kết nối trên mạng xã hội</h3>
+                                </div>
+                                <ul class="social-ft">
+                                    <li data-color="#3b5998"><a href="https://www.facebook.com/joyfood/" title=""><i
+                                                class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li data-color="#e33e2b"><a href="https://google.com" title=""><i
+                                                class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li data-color="#d20001"><a
+                                            href="https://www.youtube.com/channel/UC66gdsIMMc3jLPrQVIfY0Gg/featured"
+                                            title=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                                <div class="clear"></div>
+
+
+
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bocongthuong">
+                    <div class="wrapper">
+                        <div class="b-img"><a onmousedown="return rwt(this,'advertise',7)"
+                                href='http://online.gov.vn/Home/WebDetails/69283' target='_blank' title=''> <img
+                                    src='https://joyfood.com.vn/vnt_upload/weblink/bocongthuong.png' alt=''
+                                    class='png' /></a></div>
+                        <div class="b-text">
+                            Giấy phép kinh doanh số: 0314402905 cấp ngày 15/05/2017 bởi Sở Kế hoạch và Đầu Tư TP.Hồ Chí
+                            Minh.<br>Người đại diện: Chủ tịch: Vũ Thị Hạnh
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="copyright-social">
+                    <div class="wrapper">
+                        <div class="copyright">
+                            <div class="inline-block">Copyright © 2017 <span>BPE</span></div>
+                            <div class="inline-block">
+                                - <a href='http://www.thietkeweb.com' target='_blank' title='thiet ke web'
+                                    rel='dofollow' class='thietkeweb'>Thiết kế web :</a> <strong><a
+                                        href='http://www.trust.vn' target='_blank' rel='dofollow'>TRUST.vn</a> </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--=== END: FOOTER ===-->
+            <div class="menu_mobile">
+                <div class="divmm">
+                    <div class="mmContent">
+                        <div class="mmMenu">
+                            <div class="logo_langues">
+                                <div class="ll_langues">
+                                    <ul class="sub-ll_langues">
+                                        <li><a
+                                                href="https://joyfood.com.vn/vn/chung-nhan-chat-luonghttps://joyfood.com.vn/chung-nhan-chat-luong.html"><img
+                                                    src="https://joyfood.com.vn/vnt_upload/lang/flag1.png"
+                                                    alt="vn" />Tiếng Việt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <ul>
+
+                                <ul>
+                                    <li><a href="./trang-chu.html" target="_self">Trang chủ</a>
+                                    </li>
+                                    <li><a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
+                                    </li>
+                                    <li><a href="./san-pham.html" target="_self">Sản phẩm</a></li>
+                                    <li class='current'><a href="https://joyfood.com.vn/chung-nhan-chat-luong.html"
+                                            target="_self">Chứng nhận</a></li>
+                                    <li><a href="./tin-tuc.html" target="_self">Tin tức</a></li>
+                                    <li><a href="./lien-he.html" target="_self">Liên hệ</a></li>
+                                </ul>
+                            </ul>
+                            <div class="search-hotline">
+                                <div class="sh_search">
+
+                                    <script data-cfasync="false"
+                                        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                                    <script language="javascript">
+                                        function check_search(f) {
+                                            var key_default = "Nhập từ khóa tìm kiếm...";
+                                            var keyword = f.keyword.value;
+                                            var key_len = f.keyword.value.length;
+                                            if ((keyword == key_default) || (keyword == '')) {
+                                                alert("Vui lòng nhập từ khóa");
+                                                f.keyword.focus();
+                                                return false;
+                                            }
+                                            if (key_len < 2) {
+                                                alert("Từ khóa tới thiểu là 2 ký tự");
+                                                f.keyword.focus();
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+
+                                    </script>
+                                    <form id="formSearch" name="formSearch" method="post"
+                                        action="https://joyfood.com.vn/tim-kiem.html"
+                                        onSubmit="return check_search(this);" class="box_search">
+                                        <div class="input-group">
+                                            <input name="do_search" value="1" type="hidden" />
+                                            <input type="text" name="keyword" id="keyword" class="form-control"
+                                                placeholder="Nhập từ khóa tìm kiếm..." />
+                                            <div class="input-group-btn">
+                                                <button type="submit" name="btn-search" id="btn-search" class="btn"
+                                                    value="Tìm"><span><i class="fa fa-search"></i></span></button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-mmenu">
+                            <div class="icon_menu_close"><span class="style_icon"></span>Close</div>
+                        </div>
+                    </div>
+                    <div class="divmmbg"></div>
+                </div>
+            </div>
+            <div class="support-hotline">
+                <div class="div_title">
+                    <span class="icon"><i class="fa fa-whatsapp"></i></span>
+                    <span class="text">Hotline</span>
+                </div>
+                <div class="div_content">
+                    <div class="title_hotline">Hotline:</div>
+                    <div class="number_phone">0909 438 000</div>
+                    <div class="yahoo_skype">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

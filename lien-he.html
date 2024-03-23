@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <title>Liên hệ</title>
+    <style type="text/css">
+        .sub-info:last-child {
+            display: none;
+        }
+
+        div#vnt-header>.main-header .logo {
+            max-width: 95px;
+            margin-top: 0px;
+        }
+
+        .product .i-image {
+            background: none !important;
+        }
+
+        .product .src_status {
+            top: 30px !important;
+            right: 40px !important;
+        }
+
+        .product .src_status img {
+            max-width: 55px !important;
+        }
+    </style>
+    <link href="./assets/styles/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/fancybox.css" rel="stylesheet" type="text/css" />
+    <link href="https://joyfood.com.vn/skins/default/style/screen.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/slick.css" type="text/css" rel="stylesheet" />
+    <link href="./assets/styles/slick-theme.css" type="text/css" rel="stylesheet" />
+    <script
+        language="javascript"> var ROOT = "https://joyfood.com.vn/"; var ROOT_MOD = "https://joyfood.com.vn/lien-he"; var ROOT_PROD = ""; var url = ""; var actmod = ""; var DIR_IMAGE = "https://joyfood.com.vn/skins/default/images"; var cmd = "vnTRUST"; var lang = "vn"; var mem_id = 0; var hotline = "0909 438 000"; var messenger = ""; var zalo = ""; var skype = ""; var email = "cskh@joyfood.com.vn; huu.ha@joyfood.com.vn"; var js_lang = new Array(); js_lang['announce'] = "Thông báo"; js_lang['error'] = "Báo lỗi"; </script>
+
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="./assets/js/boostrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="./assets/js/core.js"></script>
+    <script type="text/javascript" src="./assets/js/slideSlick/js/slick.js"></script>
+    <script type="text/javascript" src="./assets/js/javascript.js"></script>
+    <link rel="stylesheet" href="https://joyfood.com.vn/modules/contact/css/contact.css" type="text/css" />
+    <script type="text/javascript" src="https://joyfood.com.vn/modules/contact/js/contact.js"></script>
+    <script type="text/javascript" src="https://joyfood.com.vn/js/jquery_plugins/jquery.validate.js"></script>
+    <script type="text/javascript" src="./assets/js/lazingloading/jquery.lazyscrollloading.js"></script>
+    <script type="text/javascript">
+
+        var arr_cat = { 13: 'https://joyfood.com.vn/dung-cu-an-uong-dung-1-lan.html', 12: 'https://joyfood.com.vn/khay-ba-mia-tu-phan-huy.html', 10: 'https://joyfood.com.vn/to-ba-mia-tu-phan-huy.html', 8: 'https://joyfood.com.vn/Ly-Ba-Mia.html', 7: 'https://joyfood.com.vn/dia-ba-mia-tu-phan-huy.html', 6: 'https://joyfood.com.vn/hop-com-ba-mia-tu-phan-huy.html' };
+        var arr_title_cat = { 0: '', 13: 'Dụng cụ ăn uống dùng 1 lần', 12: 'Khay Bã Mía', 10: 'Tô Bã Mía', 8: 'Ly Bã Mía', 7: 'Đĩa Bã Mía', 6: 'Hộp Cơm Bã Mía' };
+
+
+        var arr_input = ['p', 'catID', 'price', 'status_id', 'statusID', 'brand_id', 'bID', 'sort', 'vpage'];
+
+    </script>
+
+</head>
+
+<body>
+    <div id="vnt-wrapper">
+        <div id="vnt-container">
+            <!--=== BEGIN: HEADER ===-->
+            <div id="vnt-header">
+                <div class="top-header">
+                    <div class="wrapper">
+                        <div class="vnt-hotline">
+                            <div class="hotline">Hotline: <span>0909 438 000</span></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="main-header">
+                    <div class="wrapper">
+                        <div class="logo">
+                            <a onmousedown="return rwt(this,'advertise',1)" href='./trang-chu.html' target='_self'
+                                title='CÔNG TY TNHH BPE'><img src='./assets/images/logo.jpg' alt='CÔNG TY TNHH BPE'
+                                    class='png' /></a>
+                        </div>
+                        <div class="menu-search">
+                            <div class="vnt-menu">
+                                <ul>
+                                    <li>
+                                        <a href="./trang-chu.html" target="_self">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
+                                    </li>
+                                    <li>
+                                        <a href="./san-pham.html" target="_self">Sản phẩm</a>
+                                    </li>
+                                    <li>
+                                        <a href="./chung-nhan.html" target="_self">Chứng
+                                            nhận</a>
+                                    </li>
+                                    <li>
+                                        <a href="./tin-tuc.html" target="_self">Tin tức</a>
+                                    </li>
+                                    <li class="current">
+                                        <a href="./lien-he.html" target="_self">Liên hệ</a>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="menu_mobile">
+                                <div class="icon_menu"><span class="style_icon"></span>Menu</div>
+                            </div>
+                            <div class="vnt-search">
+                                <!--===BEGIN: FORM SEARCH==-->
+                                <div class="formsearch">
+
+                                    <form id="formSearch" name="formSearch" method="post"
+                                        action="https://joyfood.com.vn/tim-kiem.html"
+                                        onSubmit="return check_search(this);" class="box_search">
+                                        <div class="wrap-form-search">
+                                            <div class="input-group">
+                                                <div class="input-group-btn">
+                                                    <button style="display:none" id="btn-search" name="btn-search"
+                                                        type="submit" class="btn" value=""><span><i
+                                                                class="fa fa-search"></i></span></button>
+                                                </div>
+                                                <input name="keyword" id="keyword" type="text"
+                                                    class="text_search form-control"
+                                                    placeholder="Nhập từ khóa tìm kiếm..." value="">
+                                                <span class="close-search"><a class="icon-close-search"
+                                                        href="javascript:void(0);" title=""><i
+                                                            class="fa fa-search"></i></a></span>
+                                            </div>
+                                            <input name="do_search" value="1" type="hidden">
+                                            <div class="clear"></div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <!--===END: FORM SEARCH==-->
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!--=== END: HEADER ===-->
+            <div id="vnt-content">
+
+                <!--=== BEGIN: BANNER ===-->
+                <div class="vnt-banner-page">
+                    <div class="slide-banner-page">
+                        <div class="item">
+                            <div class="i-img"><a href="./trang-chu.html" title=""><img src="./assets/images/slide5.jpg"
+                                        alt=""></a></div>
+                        </div>
+                    </div>
+                    <!--===BEGIN: BREADCRUMB===-->
+                    <div id="vnt-navation" class="breadcrumb" itemscope=""
+                        itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <div class="wrapper">
+                            <div class="navation">
+                                <ul>
+                                    <li><a href="https://joyfood.com.vn/">Trang chủ</a></li>
+                                    <li>Liên hệ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--===END: BREADCRUMB===-->
+                </div>
+                <!--=== END: BANNER ===-->
+                <div class="mod-content">
+
+                    <div class="box_mid">
+                        <div class="wrapper">
+                            <div class="mid-title">
+                                <div class="titleL">
+                                    <h1>Liên hệ</h1>
+                                </div>
+                                <div class="titleR"></div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="mid-content">
+
+                                <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                                <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyBflqV2NnBqChUL9SHuneITCJMAqbzNwXQ&language=vi
+"></script>
+                                <script type="text/javascript" src="https://joyfood.com.vn/js/google/gmaps.js"></script>
+
+                                <script language=javascript>
+                                    $(document).ready(function () {
+                                        // validate signup form on keyup and submit
+                                        jQuery.validator.addMethod("security_code", function (value, element) {
+                                            if (value == $("#h_code").val()) {
+                                                return true;
+                                            } else {
+                                                return false;
+                                            }
+                                        }, "Mã bảo vệ không chính xác");
+
+                                        var validator = $("#formContact").validate({
+                                            rules: {
+                                                email: {
+                                                    required: true,
+                                                    email: true
+                                                }
+
+                                            },
+                                            messages: {
+                                                email: {
+                                                    required: "Vui lòng nhập email",
+                                                    email: "Email không hợp lệ"
+                                                }
+                                            }
+
+                                        });
+
+                                    });
+
+                                    function load_maps(id, w_map, h_map) {
+                                        $('.list_maps li').removeClass("active");
+                                        $('#maps' + id).addClass("active");
+
+                                        $(".ext_maps").html('<div align="center"><img src="' + DIR_IMAGE + '/loading.gif" alt="Loadding ..." /><br>Loadding ...</div>');
+                                        $.ajax({
+                                            type: "GET",
+                                            url: ROOT + 'modules/contact/ajax/load_map.php',
+                                            data: "id=" + id + "&w=" + w_map + "&h=" + h_map,
+                                            success: function (html) {
+                                                $("#ext_maps").html(html);
+                                            }
+                                        });
+                                        return false;
+                                    }
+
+                                </script>
+
+                                <div class="contact">
+                                    <div class="info_contact">
+                                        <div class="wrap_item">
+                                            <div class="sub-info_contact">
+                                                <div class="name">CÔNG TY TNHH BPE - VĂN PHÒNG CHÍNH</div>
+                                                <div class="before fa-home">Số 3A Vườn Lài, Phường Phú Thọ Hòa, Q. Tân
+                                                    Phú, TPHCM</div>
+                                                <div class="before fa-phone">0909 438 000 - (028)7303 0079</div>
+                                                <div class="before fa-envelope"><a href="#"><span class="__cf_email__"
+                                                            data-cfemail="1675657d7e567c796f707979723875797b386078">bpecompanylimited@gmail.com</span></a>
+                                                </div>
+                                                <div class="before fa-globe"><a href="joyfood.com.vn">joyfood.com.vn</a>
+                                                </div>
+                                                <div class="Qcode"><img
+                                                        src="https://chart.apis.google.com/chart?chf=a,s,000000|bg,s,FFFFFF&chs=150x150&chld=M|1&cht=qr&chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%0AORG%3AC%C3%94NG+TY+JOY+FOOD+-+V%C4%82N+PH%C3%92NG+CH%C3%8DNH%0ATITLE%3A%0ATEL%3BWORK%3BVOICE%3A0909+438+000+-+%28028%297303+0079%0ATEL%3BHOME%3BVOICE%3A%0AEMAIL%3BPREF%3BINTERNET%3Acskh%40joyfood.com.vn%0AURL%3Ajoyfood.com.vn%0ANOTE%3AS%E1%BB%91+3A+V%C6%B0%E1%BB%9Dn+L%C3%A0i%2C+Ph%C6%B0%E1%BB%9Dng+Ph%C3%BA+Th%E1%BB%8D+H%C3%B2a%2C+Q.+T%C3%A2n+Ph%C3%BA%2C+TPHCM%0AEND%3AVCARD&choe=UTF-8" />
+                                                </div>
+                                            </div>
+                                            <div class="view_map"><a href="#map1" class="hvr-bounce-to-top">Xem bản
+                                                    đồ</a></div>
+                                        </div>
+                                        <div class="wrap_item">
+                                            <div class="sub-info_contact">
+                                                <div class="name">CÔNG TY TNHH BPE - Chi Nhánh Miền Bắc</div>
+                                                <div class="before fa-home">P801, Tòa nhà Hoa Cương, số 80b Đường Nguyễn
+                                                    Văn Cừ, Phường Bồ Đề, Quận Long Biên, Hà Nội</div>
+                                                <div class="before fa-phone">0909 438 000</div>
+                                                <div class="before fa-envelope"><a href="#"><span class="__cf_email__"
+                                                            data-cfemail="2744544c4f674d485e414848430944484a095149">bpecompanylimited@gmail.com</span></a>
+                                                </div>
+                                                <div class="before fa-globe"><a
+                                                        href="https://joyfood.com.vn/">https://joyfood.com.vn/</a></div>
+                                                <div class="Qcode"><img
+                                                        src="https://chart.apis.google.com/chart?chf=a,s,000000|bg,s,FFFFFF&chs=150x150&chld=M|1&cht=qr&chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%0AORG%3AC%C3%94NG+TY+JOY+FOOD+-+Chi+Nh%C3%A1nh+Mi%E1%BB%81n+B%E1%BA%AFc%0ATITLE%3A%0ATEL%3BWORK%3BVOICE%3A0909+438+000%0ATEL%3BHOME%3BVOICE%3A%0AEMAIL%3BPREF%3BINTERNET%3Acskh%40joyfood.com.vn%0AURL%3Ahttps%3A%2F%2Fjoyfood.com.vn%2F%0ANOTE%3AP801%2C+T%C3%B2a+nh%C3%A0+Hoa+C%C6%B0%C6%A1ng%2C+s%E1%BB%91+80b+%C4%90%C6%B0%E1%BB%9Dng+Nguy%E1%BB%85n+V%C4%83n+C%E1%BB%AB%2C+Ph%C6%B0%E1%BB%9Dng+B%E1%BB%93+%C4%90%E1%BB%81%2C+Qu%E1%BA%ADn+Long+Bi%C3%AAn%2C+H%C3%A0+N%E1%BB%99i%0AEND%3AVCARD&choe=UTF-8" />
+                                                </div>
+                                            </div>
+                                            <div class="view_map"><a href="#map18" class="hvr-bounce-to-top">Xem bản
+                                                    đồ</a></div>
+                                        </div>
+                                        <div class="wrap_item">
+                                            <div class="sub-info_contact">
+                                                <div class="name">Đại Lý: CÔNG TY TNHH THE ORGANIK HOUSE</div>
+                                                <div class="before fa-home">Chung cư Phạm Viết Chánh, lô D cổng 2 - 79
+                                                    Phạm Viết Chánh, P.19, Q.Bình Thạnh</div>
+                                                <div class="before fa-phone">090 9576898</div>
+                                                <div class="before fa-envelope"><a href="#"><span class="__cf_email__"
+                                                            data-cfemail="6d050200082d190508021f0a0c0304060502181e08430e0200">bpecompanylimited@gmail.com</span></a>
+                                                </div>
+                                                <div class="before fa-globe"><a href="N/A">N/A</a></div>
+                                                <div class="Qcode"><img
+                                                        src="https://chart.apis.google.com/chart?chf=a,s,000000|bg,s,FFFFFF&chs=150x150&chld=M|1&cht=qr&chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%0AORG%3A%C4%90%E1%BA%A1i+L%C3%BD%3A+C%C3%94NG+TY+TNHH+THE+ORGANIK+HOUSE%0ATITLE%3A%0ATEL%3BWORK%3BVOICE%3A090+9576898%0ATEL%3BHOME%3BVOICE%3A%0AEMAIL%3BPREF%3BINTERNET%3Ahome%40theorganikhouse.com%0AURL%3AN%2FA%0ANOTE%3AChung+c%C6%B0+Ph%E1%BA%A1m+Vi%E1%BA%BFt+Ch%C3%A1nh%2C+l%C3%B4+D+c%E1%BB%95ng+2+-+79+Ph%E1%BA%A1m+Vi%E1%BA%BFt+Ch%C3%A1nh%2C+P.19%2C+Q.B%C3%ACnh+Th%E1%BA%A1nh%0AEND%3AVCARD&choe=UTF-8" />
+                                                </div>
+                                            </div>
+                                            <div class="view_map"><a href="#map7" class="hvr-bounce-to-top">Xem bản
+                                                    đồ</a></div>
+                                        </div>
+                                        <div class="wrap_item">
+                                            <div class="sub-info_contact">
+                                                <div class="name">ĐẠI LÝ: CỬA HÀNG THUẬN CẢNH</div>
+                                                <div class="before fa-home">Số 33 Trang Tử, Phường 14, Quận 05, Tp. Hồ
+                                                    Chí Minh</div>
+                                                <div class="before fa-phone">097.7038.106 - 098.2222.912</div>
+                                                <div class="before fa-envelope"><a href="#"><span class="__cf_email__"
+                                                            data-cfemail="70181f111e170418094942494330171d11191c5e131f1d">bpecompanylimited@gmail.com</span></a>
+                                                </div>
+                                                <div class="before fa-globe"><a href="N/A">N/A</a></div>
+                                                <div class="Qcode"><img
+                                                        src="https://chart.apis.google.com/chart?chf=a,s,000000|bg,s,FFFFFF&chs=150x150&chld=M|1&cht=qr&chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%0AORG%3A%C4%90%E1%BA%A0I+L%C3%9D%3A+C%E1%BB%ACA+H%C3%80NG+THU%E1%BA%ACN+C%E1%BA%A2NH%0ATITLE%3A%0ATEL%3BWORK%3BVOICE%3A097.7038.106+-+098.2222.912%0ATEL%3BHOME%3BVOICE%3A%0AEMAIL%3BPREF%3BINTERNET%3Ahoangthy9293%40gmail.com%0AURL%3AN%2FA%0ANOTE%3AS%E1%BB%91+33+Trang+T%E1%BB%AD%2C+Ph%C6%B0%E1%BB%9Dng+14%2C+Qu%E1%BA%ADn+05%2C+Tp.+H%E1%BB%93+Ch%C3%AD+Minh%0AEND%3AVCARD&choe=UTF-8" />
+                                                </div>
+                                            </div>
+                                            <div class="view_map"><a href="#map15" class="hvr-bounce-to-top">Xem bản
+                                                    đồ</a></div>
+                                        </div>
+                                        <div class="wrap_item">
+                                            <div class="sub-info_contact">
+                                                <div class="name">ĐẠI LÝ: CỬA HÀNG THUẬN CẢNH - CN2</div>
+                                                <div class="before fa-home">Số 12 Đường 3B, Phường An Lạc A, Quận Bình
+                                                    Tân, Tp. Hồ Chí Minh</div>
+                                                <div class="before fa-phone">0977038106 - 0982222912</div>
+                                                <div class="before fa-envelope"><a href="#"><span class="__cf_email__"
+                                                            data-cfemail="21494e404f465549581813181261464c40484d0f424e4c">bpecompanylimited@gmail.com</span></a>
+                                                </div>
+                                                <div class="before fa-globe"><a href="N/A">N/A</a></div>
+                                                <div class="Qcode"><img
+                                                        src="https://chart.apis.google.com/chart?chf=a,s,000000|bg,s,FFFFFF&chs=150x150&chld=M|1&cht=qr&chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%0AORG%3A%C4%90%E1%BA%A0I+L%C3%9D%3A+C%E1%BB%ACA+H%C3%80NG+THU%E1%BA%ACN+C%E1%BA%A2NH+-+CN2%0ATITLE%3A%0ATEL%3BWORK%3BVOICE%3A0977038106+-+0982222912%0ATEL%3BHOME%3BVOICE%3A%0AEMAIL%3BPREF%3BINTERNET%3Ahoangthy9293%40gmail.com%0AURL%3AN%2FA%0ANOTE%3AS%E1%BB%91+12+%C4%90%C6%B0%E1%BB%9Dng+3B%2C+Ph%C6%B0%E1%BB%9Dng+An+L%E1%BA%A1c+A%2C+Qu%E1%BA%ADn+B%C3%ACnh+T%C3%A2n%2C+Tp.+H%E1%BB%93+Ch%C3%AD+Minh%0AEND%3AVCARD&choe=UTF-8" />
+                                                </div>
+                                            </div>
+                                            <div class="view_map"><a href="#map17" class="hvr-bounce-to-top">Xem bản
+                                                    đồ</a></div>
+                                        </div>
+                                        <div class="wrap_item">
+                                            <div class="sub-info_contact">
+                                                <div class="name">Đại Lý: Công ty TNHH Bao Bì Xanh Thịnh Phát</div>
+                                                <div class="before fa-home">Địa chỉ cửa hàng: Ngõ 61/17 Phùng Chí Kiên,
+                                                    quận Cầu Giấy, TP. Hà Nội</div>
+                                                <div class="before fa-phone">0978 996 112</div>
+                                                <div class="before fa-envelope"><a href="#"><span class="__cf_email__"
+                                                            data-cfemail="3f5d5e505d56475e51574c56515757505c7f58525e5653115c5052">bpecompanylimited@gmail.com</span></a>
+                                                </div>
+                                                <div class="before fa-globe"><a
+                                                        href="thinhphatgreen.vn">thinhphatgreen.vn</a></div>
+                                                <div class="Qcode"><img
+                                                        src="https://chart.apis.google.com/chart?chf=a,s,000000|bg,s,FFFFFF&chs=150x150&chld=M|1&cht=qr&chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%0AORG%3A%C4%90%E1%BA%A1i+L%C3%BD%3A+C%C3%B4ng+ty+TNHH+Bao+B%C3%AC+Xanh+Th%E1%BB%8Bnh+Ph%C3%A1t%0ATITLE%3A%0ATEL%3BWORK%3BVOICE%3A0978+996+112%0ATEL%3BHOME%3BVOICE%3A%0AEMAIL%3BPREF%3BINTERNET%3Abaobixanhsinhhoc%40gmail.com%0AURL%3Athinhphatgreen.vn%0ANOTE%3A%C4%90%E1%BB%8Ba+ch%E1%BB%89+c%E1%BB%ADa+h%C3%A0ng%3A+Ng%C3%B5+61%2F17+Ph%C3%B9ng+Ch%C3%AD+Ki%C3%AAn%2C++qu%E1%BA%ADn+C%E1%BA%A7u+Gi%E1%BA%A5y%2C+TP.+H%C3%A0+N%E1%BB%99i%0AEND%3AVCARD&choe=UTF-8" />
+                                                </div>
+                                            </div>
+                                            <div class="view_map"><a href="#map12" class="hvr-bounce-to-top">Xem bản
+                                                    đồ</a></div>
+                                        </div>
+                                        <div class="wrap_item">
+                                            <div class="sub-info_contact">
+                                                <div class="name">Đại Lý: Công Ty Cổ Phần SX TM&DV Bao Bì Lê Ánh Hoa
+                                                </div>
+                                                <div class="before fa-home">Địa chỉ cửa hàng: 42 Hàng Chiếu, Quận Hoàn
+                                                    Kiếm, TP. Hà Nội</div>
+                                                <div class="before fa-phone">0968 717 917 hoặc 024 39909473</div>
+                                                <div class="before fa-envelope"><a href="#"><span class="__cf_email__"
+                                                            data-cfemail="cfa3aaaea1a7a7a0aefdfffef7e1a3aea78fa8a2aea6a3e1aca0a2">bpecompanylimited@gmail.com</span></a>
+                                                </div>
+                                                <div class="before fa-globe"><a
+                                                        href="anhhoaplastic.bizz.vn">anhhoaplastic.bizz.vn</a></div>
+                                                <div class="Qcode"><img
+                                                        src="https://chart.apis.google.com/chart?chf=a,s,000000|bg,s,FFFFFF&chs=150x150&chld=M|1&cht=qr&chl=BEGIN%3AVCARD%0AVERSION%3A2.1%0AN%3A%0AORG%3A%C4%90%E1%BA%A1i+L%C3%BD%3A+C%C3%B4ng+Ty+C%E1%BB%95+Ph%E1%BA%A7n+SX+TM%26DV+Bao+B%C3%AC+L%C3%AA+%C3%81nh+Hoa%0ATITLE%3A%0ATEL%3BWORK%3BVOICE%3A0968+717+917+ho%E1%BA%B7c+024+39909473%0ATEL%3BHOME%3BVOICE%3A%0AEMAIL%3BPREF%3BINTERNET%3Aleanhhoa2018.lah%40gmail.com%0AURL%3Aanhhoaplastic.bizz.vn%0ANOTE%3A%C4%90%E1%BB%8Ba+ch%E1%BB%89+c%E1%BB%ADa+h%C3%A0ng%3A+42+H%C3%A0ng+Chi%E1%BA%BFu%2C+Qu%E1%BA%ADn+Ho%C3%A0n+Ki%E1%BA%BFm%2C+TP.+H%C3%A0+N%E1%BB%99i%0AEND%3AVCARD&choe=UTF-8" />
+                                                </div>
+                                            </div>
+                                            <div class="view_map"><a href="#map13" class="hvr-bounce-to-top">Xem bản
+                                                    đồ</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--=== FORM LIÊN HỆ ==-->
+                                <div class="formContact">
+
+                                    <form id="formContact" name="formContact" method="post"
+                                        action="https://joyfood.com.vn/lien-he.html" class="form validate">
+                                        <div class="thanks-for">Cảm ơn Quý Khách đã quan tâm tới dịch vụ của chúng tôi,
+                                            Quý Khách vui lòng liên hệ trực tiếp tại bất kỳ chi nhánh thành viên gần
+                                            nhất hoặc liên hệ qua form:</div>
+                                        <div class="row-form">
+                                            <div class="rf_left">
+                                                <label for="name">Họ và tên <span>(*)</span></label>
+                                            </div>
+                                            <div class="rf_right">
+                                                <input type="text" class="form-control required" value="" id="name"
+                                                    name="name" title="Vui lòng nhập họ tên liên lạc" />
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="row-form">
+                                            <div class="rf_left">
+                                                <label for="email">Email <span>(*)</span></label>
+                                            </div>
+                                            <div class="rf_right">
+                                                <input type="text" name="email" id="email" class="form-control required"
+                                                    value="" />
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="row-form">
+                                            <div class="rf_left">
+                                                <label for="phone">Điện thoại <span>(*)</span></label>
+                                            </div>
+                                            <div class="rf_right">
+                                                <input type="text" name="phone" id="phone" class="form-control required"
+                                                    value="" title="Vui lòng nhập điện thoại liên lạc" />
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="row-form">
+                                            <div class="rf_left">
+                                                <label for="content">Nội dung <span>(*)</span></label>
+                                            </div>
+                                            <div class="rf_right">
+                                                <textarea class="form-control required" id="content" name="content"
+                                                    rows="3" title="Vui lòng nhập nội dung liên lạc"></textarea>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="row-form">
+                                            <div class="rf_left">
+                                                <label for="security_code">Mã xác nhận <span>(*)</span></label>
+                                            </div>
+                                            <div class="rf_right">
+                                                <div class="input-group">
+                                                    <input type="text" name="security_code" id="security_code"
+                                                        class="form-control required" value=""
+                                                        title="Vui lòng nhập mã xác nhận" />
+                                                    <span class="input-group-img">
+                                                        <img
+                                                            src="https://joyfood.com.vn/includes/sec_image.php?code=zOTQ4MQx" />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="row-form c-button">
+                                            <div class="rf_left">
+                                            </div>
+                                            <div class="rf_right">
+                                                <div class="ct-button">
+                                                    <div class="button-left">
+                                                        <button id="do_submit" name="do_submit" type="submit"
+                                                            class="btn btnsubmit hvr-bounce-to-top1"
+                                                            value="Gửi"><span><i class="fa fa-envelope"
+                                                                    aria-hidden="true"></i>Gửi</span></button>
+                                                    </div>
+                                                    <div class="button-right">
+                                                        <button id="btnReset" name="btnReset" type="reset"
+                                                            class="btn hvr-bounce-to-top" value="Nhập lại"><span><i
+                                                                    class="fa fa-repeat" aria-hidden="true"></i>Nhập
+                                                                lại</span></button>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--=== END: FORM LIÊN HỆ ==-->
+                                <div class="map_wrapper" id="viewmap">
+                                    <div class="map_title">
+                                        <div class="tab_title"></div>
+                                        <ul>
+                                            <li class='active' id='map1'><a href='javascript:;'
+                                                    onclick="load_maps(1,450,450);"><span>Trụ sở chính</span></a></li>
+                                            <li id='map18'><a href='javascript:;'
+                                                    onclick="load_maps(18,450,450);"><span>VP Chi Nhánh Miền
+                                                        Bắc</span></a></li>
+                                            <li id='map7'><a href='javascript:;'
+                                                    onclick="load_maps(7,450,450);"><span>ĐẠI LÝ HCM: THE ORGANIK
+                                                        HOUSE</span></a></li>
+                                            <li id='map15'><a href='javascript:;'
+                                                    onclick="load_maps(15,450,450);"><span>ĐẠI LÝ: CỬA HÀNG THUẬN
+                                                        CẢNH</span></a></li>
+                                            <li id='map17'><a href='javascript:;'
+                                                    onclick="load_maps(17,450,450);"><span>ĐẠI LÝ: CỬA HÀNG THUẬN CẢNH -
+                                                        CN2</span></a></li>
+                                            <li id='map12'><a href='javascript:;'
+                                                    onclick="load_maps(12,450,450);"><span>Đại Lý Hà Nội: Bao Bì Xanh
+                                                        Thịnh Phát</span></a></li>
+                                            <li id='map13'><a href='javascript:;'
+                                                    onclick="load_maps(13,450,450);"><span>Đại Lý Hà Nội: Bao Bì Lê Ánh
+                                                        Hoa</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="ext_maps" class="map_content">
+                                        <script data-cfasync="false"
+                                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                                        <script language=javascript>load_maps(1, 450, 450); </script>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <!--=== BEGIN: FOOTER ===-->
+            <div id="vnt-footer">
+                <div class="main-footer">
+                    <div class="wrapper">
+                        <div class="sub-main-ft">
+                            <div class="info-company">
+                                <div class="sub-info">
+                                    <div class="name ">CÔNG TY TNHH BPE - VĂN PHÒNG CHÍNH</div>
+                                    <div class="before fa-home">B2/1, đường 385, phường Tăng Nhơn Phú A, TP Thủ Đức, TP.
+                                        Hồ Chí Minh, Việt Nam
+                                    </div>
+                                    <div class="before fa-phone">0909 438 000 - (028)7303 0079</div>
+                                    <div class="before fa-envelope"><a href="/cdn-cgi/l/email-protection"
+                                            class="__cf_email__"
+                                            data-cfemail="731000181b33191c0a151c1c175d101c1e5d051d">bpecompanylimited@gmail.com</a>
+                                    </div>
+                                    <div class="footer_view_map"><a href="https://joyfood.com.vn/lien-he.html#viewmap"
+                                            title="">Xem bản đồ</a></div>
+                                </div>
+                                <div class="sub-info">
+                                    <div class="name  chinhanh">CÔNG TY TNHH BPE - Chi Nhánh Miền Bắc</div>
+                                    <div class="before fa-home">P801, Tòa nhà Hoa Cương, số 80b Đường Nguyễn Văn Cừ,
+                                        Phường Bồ Đề, Quận Long Biên, Hà Nội</div>
+                                    <div class="before fa-phone">0909 438 000</div>
+                                    <div class="before fa-envelope"><a href="/cdn-cgi/l/email-protection"
+                                            class="__cf_email__"
+                                            data-cfemail="4c2f3f27240c2623352a232328622f2321623a22">bpecompanylimited@gmail.com</a>
+                                    </div>
+                                    <div class="footer_view_map"><a href="https://joyfood.com.vn/lien-he.html#viewmap"
+                                            title="">Xem bản đồ</a></div>
+                                </div>
+                            </div>
+
+                            <div class="row-ft row-hidden">
+                                <div class="wrap-row">
+                                    <div class="sub-row-ft">
+                                        <div class="title-row-ft">
+                                            <h3>Giới thiệu</h3>
+                                        </div>
+                                        <ul>
+                                            <li><a href="https://joyfood.com.vn/gioi-thieu.html" target="_self"><span>Về
+                                                        BPE</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/tam-nhin-su-menh.html"
+                                                    target="_self"><span>Sứ mệnh - Tầm nhìn</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/chung-nhan-chat-luong.html"
+                                                    target="_self"><span>Chứng nhận chất lượng</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-row-ft">
+                                        <div class="title-row-ft">
+                                            <h3>Chính sách</h3>
+                                        </div>
+                                        <ul>
+                                            <li><a href="https://joyfood.com.vn/chinh-sach-thanh-toan.html"
+                                                    target="_self"><span>Chính sách thanh toán</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/chinh-sach-bao-mat-thong-tin.html"
+                                                    target="_self"><span>Chính sách bảo mật thông tin</span></a></li>
+                                            <li><a href="https://joyfood.com.vn/chinh-sach-van-chuyen.html"
+                                                    target="_self"><span>Chính sách vận chuyển</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="social-row-ft">
+                                <div class="title-row-ft">
+                                    <h3>Kết nối trên mạng xã hội</h3>
+                                </div>
+                                <ul class="social-ft">
+                                    <li data-color="#3b5998"><a href="https://www.facebook.com/joyfood/" title=""><i
+                                                class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li data-color="#e33e2b"><a href="https://google.com" title=""><i
+                                                class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li data-color="#d20001"><a
+                                            href="https://www.youtube.com/channel/UC66gdsIMMc3jLPrQVIfY0Gg/featured"
+                                            title=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+
+                                </ul>
+                                <div class="clear"></div>
+
+
+
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bocongthuong">
+                    <div class="wrapper">
+                        <div class="b-img"><a onmousedown="return rwt(this,'advertise',7)"
+                                href='http://online.gov.vn/Home/WebDetails/69283' target='_blank' title=''> <img
+                                    src='https://joyfood.com.vn/vnt_upload/weblink/bocongthuong.png' alt=''
+                                    class='png' /></a></div>
+                        <div class="b-text">
+                            Giấy phép kinh doanh số: 0314402905 cấp ngày 15/05/2017 bởi Sở Kế hoạch và Đầu Tư TP.Hồ Chí
+                            Minh.<br>Người đại diện: Chủ tịch: Vũ Thị Hạnh
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="copyright-social">
+                    <div class="wrapper">
+                        <div class="copyright">
+                            <div class="inline-block">Copyright © 2017 <span>BPE</span></div>
+                            <div class="inline-block">
+                                - <a href='http://www.thietkeweb.com' target='_blank' title='thiet ke web'
+                                    rel='dofollow' class='thietkeweb'>Thiết kế web :</a> <strong><a
+                                        href='http://www.trust.vn' target='_blank' rel='dofollow'>TRUST.vn</a> </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--=== END: FOOTER ===-->
+            <div class="menu_mobile">
+                <div class="divmm">
+                    <div class="mmContent">
+                        <div class="mmMenu">
+                            <div class="logo_langues">
+                                <div class="ll_langues">
+                                    <ul class="sub-ll_langues">
+                                        <li><a
+                                                href="https://joyfood.com.vn/vn/lien-hehttps://joyfood.com.vn/lien-he.html"><img
+                                                    src="https://joyfood.com.vn/vnt_upload/lang/flag1.png"
+                                                    alt="vn" />Tiếng Việt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <ul>
+
+                                <ul>
+                                    <li><a href="./trang-chu.html" target="_self">Trang chủ</a>
+                                    </li>
+                                    <li class='current'><a href="https://joyfood.com.vn/gioi-thieu.html"
+                                            target="_self">Giới thiệu</a></li>
+                                    <li><a href="./san-pham.html" target="_self">Sản phẩm</a></li>
+                                    <li><a href="https://joyfood.com.vn/chung-nhan-chat-luong.html" target="_self">Chứng
+                                            nhận</a></li>
+                                    <li><a href="./tin-tuc.html" target="_self">Tin tức</a></li>
+                                    <li><a href="./lien-he.html" target="_self">Liên hệ</a></li>
+                                </ul>
+                            </ul>
+                            <div class="search-hotline">
+                                <div class="sh_search">
+
+                                    <script data-cfasync="false"
+                                        src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                                    <script language="javascript">
+                                        function check_search(f) {
+                                            var key_default = "Nhập từ khóa tìm kiếm...";
+                                            var keyword = f.keyword.value;
+                                            var key_len = f.keyword.value.length;
+                                            if ((keyword == key_default) || (keyword == '')) {
+                                                alert("Vui lòng nhập từ khóa");
+                                                f.keyword.focus();
+                                                return false;
+                                            }
+                                            if (key_len < 2) {
+                                                alert("Từ khóa tới thiểu là 2 ký tự");
+                                                f.keyword.focus();
+                                                return false;
+                                            }
+                                            return true;
+                                        }
+
+                                    </script>
+                                    <form id="formSearch" name="formSearch" method="post"
+                                        action="https://joyfood.com.vn/tim-kiem.html"
+                                        onSubmit="return check_search(this);" class="box_search">
+                                        <div class="input-group">
+                                            <input name="do_search" value="1" type="hidden" />
+                                            <input type="text" name="keyword" id="keyword" class="form-control"
+                                                placeholder="Nhập từ khóa tìm kiếm..." />
+                                            <div class="input-group-btn">
+                                                <button type="submit" name="btn-search" id="btn-search" class="btn"
+                                                    value="Tìm"><span><i class="fa fa-search"></i></span></button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="close-mmenu">
+                            <div class="icon_menu_close"><span class="style_icon"></span>Close</div>
+                        </div>
+                    </div>
+                    <div class="divmmbg"></div>
+                </div>
+            </div>
+            <div class="support-hotline">
+                <div class="div_title">
+                    <span class="icon"><i class="fa fa-whatsapp"></i></span>
+                    <span class="text">Hotline</span>
+                </div>
+                <div class="div_content">
+                    <div class="title_hotline">Hotline:</div>
+                    <div class="number_phone">0909 438 000</div>
+                    <div class="yahoo_skype">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
