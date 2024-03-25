@@ -31,11 +31,12 @@
     <link href="./assets/styles/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/styles/fancybox.css" rel="stylesheet" type="text/css" />
-    <link href="https://joyfood.com.vn/skins/default/style/screen.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/screen.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/box.css" rel="stylesheet" type="text/css" />
     <link href="./assets/styles/slick.css" type="text/css" rel="stylesheet" />
     <link href="./assets/styles/slick-theme.css" type="text/css" rel="stylesheet" />
-    <script
-        language="javascript"> var ROOT = "https://joyfood.com.vn/"; var ROOT_MOD = "https://joyfood.com.vn/san-pham"; var ROOT_PROD = ""; var url = ""; var actmod = ""; var DIR_IMAGE = "https://joyfood.com.vn/skins/default/images"; var cmd = "vnTRUST"; var lang = "vn"; var mem_id = 0; var hotline = "0909 438 000"; var messenger = ""; var zalo = ""; var skype = ""; var email = "cskh@joyfood.com.vn; huu.ha@joyfood.com.vn"; var js_lang = new Array(); js_lang['announce'] = "Thông báo"; js_lang['error'] = "Báo lỗi"; </script>
 
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/jquery-migrate.min.js"></script>
@@ -47,18 +48,7 @@
     <link rel="stylesheet" href="https://joyfood.com.vn/modules/product/css/product.css" type="text/css" />
     <script type="text/javascript" src="https://joyfood.com.vn/modules/product/js/product.js"></script>
     <script type="text/javascript" src="./assets/js/lazingloading/jquery.lazyscrollloading.js"></script>
-    <script type="text/javascript"
-        src="https://joyfood.com.vn/js/slideSlick/js/jquery.elevateZoom-3.0.8.min.js"></script>
-    <script type="text/javascript">
-
-        var arr_cat = { 13: 'https://joyfood.com.vn/dung-cu-an-uong-dung-1-lan.html', 12: 'https://joyfood.com.vn/khay-ba-mia-tu-phan-huy.html', 10: 'https://joyfood.com.vn/to-ba-mia-tu-phan-huy.html', 8: 'https://joyfood.com.vn/Ly-Ba-Mia.html', 7: 'https://joyfood.com.vn/dia-ba-mia-tu-phan-huy.html', 6: 'https://joyfood.com.vn/hop-com-ba-mia-tu-phan-huy.html' };
-        var arr_title_cat = { 0: 'Sản phẩm', 13: 'Dụng cụ ăn uống dùng 1 lần', 12: 'Khay Bã Mía', 10: 'Tô Bã Mía', 8: 'Ly Bã Mía', 7: 'Đĩa Bã Mía', 6: 'Hộp Cơm Bã Mía' };
-
-
-        var arr_input = ['p', 'catID', 'price', 'status_id', 'statusID', 'brand_id', 'bID', 'sort', 'vpage'];
-
-    </script>
-
+    <script type="text/javascript" src="./assets/js/jquery.elevateZoom-3.0.8.min.js"></script>
 </head>
 
 <body>
@@ -89,13 +79,6 @@
                                     </li>
                                     <li>
                                         <a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
-                                    </li>
-                                    <li class="current">
-                                        <a href="./san-pham.html" target="_self">Sản phẩm</a>
-                                    </li>
-                                    <li>
-                                        <a href="./chung-nhan.html" target="_self">Chứng
-                                            nhận</a>
                                     </li>
                                     <li>
                                         <a href="./tin-tuc.html" target="_self">Tin tức</a>
@@ -151,7 +134,7 @@
                 <div class="vnt-banner-page">
                     <div class="slide-banner-page">
                         <div class="item">
-                            <div class="i-img"><a href="./trang-chu.html" title=""><img src="./assets/images/slide5.jpg"
+                            <div class="i-img"><a href="./trang-chu.html" title=""><img src="./assets/images/slide2.jpg"
                                         alt=""></a></div>
                         </div>
                     </div>
@@ -221,25 +204,21 @@
                                                 <div class="sort">
                                                     <select name="sort" id="sort" onchange="location=this.value;"
                                                         class="form-control">
-                                                        <option value="https://joyfood.com.vn/san-pham.html/?sort="
-                                                            selected>-- Sort by --</option>
-                                                        <option value="https://joyfood.com.vn/san-pham.html/?sort=desc">
+                                                        <option value="" selected>-- Sort by --</option>
+                                                        <option value="">
                                                             Giá giảm dần</option>
-                                                        <option value="https://joyfood.com.vn/san-pham.html/?sort=asc">
+                                                        <option value="">
                                                             Giá tăng dần</option>
                                                     </select>
                                                 </div>
                                                 <div class="sort_stt">
                                                     <select name="count_sort" id="count_sort"
                                                         onchange="location=this.value;" class="form-control">
-                                                        <option
-                                                            value="https://joyfood.com.vn/san-pham.html/?count_sort=12">
+                                                        <option value="">
                                                             Hiển thị 12 sản phẩm</option>
-                                                        <option
-                                                            value="https://joyfood.com.vn/san-pham.html/?count_sort=15">
+                                                        <option value="">
                                                             Hiển thị 15 sản phẩm</option>
-                                                        <option
-                                                            value="https://joyfood.com.vn/san-pham.html/?count_sort=18">
+                                                        <option value="">
                                                             Hiển thị 18 sản phẩm</option>
                                                     </select>
                                                 </div>
@@ -251,7 +230,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2023/11/thumbs/271__T200-01.png"
                                                                     itemprop="image" alt='Khay bã mía 2 ngăn'
                                                                     title='Khay bã mía 2 ngăn' /></a>
@@ -259,14 +238,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Khay bã mía 2 ngăn</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Khay bã mía 2
+                                                                        ngăn</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -278,7 +259,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2023/11/thumbs/271__L008-03.png"
                                                                     itemprop="image" alt='Tô bã mía chữ nhật 850 ml'
                                                                     title='Tô bã mía chữ nhật 850 ml' /></a>
@@ -286,14 +267,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Tô bã mía chữ nhật 850 ml</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Tô bã mía chữ
+                                                                        nhật 850 ml</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -305,7 +288,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2019/03/thumbs/271__J300-07.png"
                                                                     itemprop="image" alt='Nắp bã mía khay chữ nhật'
                                                                     title='Nắp bã mía khay chữ nhật' /></a>
@@ -313,14 +296,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Nắp bã mía khay chữ nhật</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Nắp bã mía
+                                                                        khay chữ nhật</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -332,7 +317,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2023/11/thumbs/271__J008-05.png"
                                                                     itemprop="image" alt='Nắp bã mía tô 850ml'
                                                                     title='Nắp bã mía tô 850ml' /></a>
@@ -340,14 +325,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Nắp bã mía tô 850ml</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Nắp bã mía tô
+                                                                        850ml</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -359,7 +346,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2022/08/thumbs/271__KB001.png"
                                                                     itemprop="image" alt='DAO GỖ DÙNG MỘT LẦN'
                                                                     title='DAO GỖ DÙNG MỘT LẦN' /></a>
@@ -367,14 +354,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">DAO GỖ DÙNG MỘT LẦN</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">DAO GỖ DÙNG
+                                                                        MỘT LẦN</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -386,7 +375,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2022/06/thumbs/271__khay-ba-mia-t408.jpg"
                                                                     itemprop="image" alt='Khay Bã Mía 750ml'
                                                                     title='Khay Bã Mía 750ml' /></a>
@@ -394,14 +383,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Khay Bã Mía 750ml</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Khay Bã Mía
+                                                                        750ml</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -413,7 +404,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2022/06/thumbs/271__T100.png"
                                                                     itemprop="image" alt='Khay Bã Mía 1000ml'
                                                                     title='Khay Bã Mía 1000ml' /></a>
@@ -421,14 +412,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Khay Bã Mía 1000ml</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Khay Bã Mía
+                                                                        1000ml</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -440,7 +433,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2021/11/thumbs/271__T759.png"
                                                                     itemprop="image" alt='Hộp bã mía 1 ngăn (750ml)'
                                                                     title='Hộp bã mía 1 ngăn (750ml)' /></a>
@@ -450,14 +443,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Hộp bã mía 1 ngăn (750ml)</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Hộp bã mía 1
+                                                                        ngăn (750ml)</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -469,7 +464,7 @@
                                                         itemtype="http://schema.org/Product">
                                                         <div class="i-image">
 
-                                                            <a itemprop="url" href="" title=""><img
+                                                            <a itemprop="url" href="javascript:void(0)" title=""><img
                                                                     src="https://joyfood.com.vn/vnt_upload/product/2021/11/thumbs/271__T670.png"
                                                                     itemprop="image" alt='Hộp bã mía 2 ngăn (670ml)'
                                                                     title='Hộp bã mía 2 ngăn (670ml)' /></a>
@@ -479,14 +474,16 @@
                                                         </div>
                                                         <div class="i-desc">
                                                             <div class="i-title">
-                                                                <h3 itemprop="name"><a itemprop="url" href=""
-                                                                        title="">Hộp bã mía 2 ngăn (670ml)</a></h3>
+                                                                <h3 itemprop="name"><a itemprop="url"
+                                                                        href="javascript:void(0)" title="">Hộp bã mía 2
+                                                                        ngăn (670ml)</a></h3>
                                                             </div>
                                                             <div class="i-price">
                                                                 LIÊN HỆ
 
                                                             </div>
-                                                            <div class="i-more"><a itemprop="url" href="" title="">ĐỌC
+                                                            <div class="i-more"><a itemprop="url"
+                                                                    href="javascript:void(0)" title="">ĐỌC
                                                                     TIẾP</a></div>
                                                         </div>
                                                         <div class="clear"></div>
@@ -515,22 +512,22 @@
                                         <h2>SẢN PHẨM ĐẠT CÁC CHỨNG CHỈ:</h2>
                                     </div>
                                     <div id="slideCer">
-                                        <div class="item"><a href="" target="_blank"><img
+                                        <div class="item"><a href="javascript:void(0)" target="_blank"><img
                                                     src="https://joyfood.com.vn/vnt_upload/weblink/c1.jpg"
                                                     alt="Logo 1" /></a></div>
-                                        <div class="item"><a href="" target="_blank"><img
+                                        <div class="item"><a href="javascript:void(0)" target="_blank"><img
                                                     src="https://joyfood.com.vn/vnt_upload/weblink/c2.jpg"
                                                     alt="Logo 2" /></a></div>
-                                        <div class="item"><a href="" target="_blank"><img
+                                        <div class="item"><a href="javascript:void(0)" target="_blank"><img
                                                     src="https://joyfood.com.vn/vnt_upload/weblink/c3.jpg"
                                                     alt="Logo 3" /></a></div>
-                                        <div class="item"><a href="" target="_blank"><img
+                                        <div class="item"><a href="javascript:void(0)" target="_blank"><img
                                                     src="https://joyfood.com.vn/vnt_upload/weblink/c4.jpg"
                                                     alt="Logo 5" /></a></div>
-                                        <div class="item"><a href="" target="_blank"><img
+                                        <div class="item"><a href="javascript:void(0)" target="_blank"><img
                                                     src="https://joyfood.com.vn/vnt_upload/weblink/c5.jpg"
                                                     alt="Logo 5" /></a></div>
-                                        <div class="item"><a href="" target="_blank"><img
+                                        <div class="item"><a href="javascript:void(0)" target="_blank"><img
                                                     src="https://joyfood.com.vn/vnt_upload/weblink/c6.jpg"
                                                     alt="Logo 6" /></a></div>
                                     </div>
@@ -554,7 +551,7 @@
                                         Hồ Chí Minh, Việt Nam
                                     </div>
                                     <div class="before fa-phone">0909 438 000 - (028)7303 0079</div>
-                                    <div class="before fa-envelope"><a href="" class="__cf_email__"
+                                    <div class="before fa-envelope"><a href="javascript:void(0)" class="__cf_email__"
                                             data-cfemail="e88b9b8380a88287918e87878cc68b8785c69e86">bpecompanylimited@gmail.com</a>
                                     </div>
                                     <div class="footer_view_map"><a href="./lien-he.html" title="">Xem bản đồ</a></div>
@@ -564,7 +561,7 @@
                                     <div class="before fa-home">P801, Tòa nhà Hoa Cương, số 80b Đường Nguyễn Văn Cừ,
                                         Phường Bồ Đề, Quận Long Biên, Hà Nội</div>
                                     <div class="before fa-phone">0909 438 000</div>
-                                    <div class="before fa-envelope"><a href="" class="__cf_email__"
+                                    <div class="before fa-envelope"><a href="javascript:void(0)" class="__cf_email__"
                                             data-cfemail="84e7f7efecc4eeebfde2ebebe0aae7ebe9aaf2ea">bpecompanylimited@gmail.com</a>
                                     </div>
                                     <div class="footer_view_map"><a href="./lien-he.html" title="">Xem bản đồ</a></div>
@@ -580,9 +577,8 @@
                                         <ul>
                                             <li><a href="./gioi-thieu.html" target="_self"><span>Về
                                                         BPE</span></a></li>
-                                            <li><a href="" target="_self"><span>Sứ mệnh - Tầm nhìn</span></a></li>
-                                            <li><a href="./chung-nhan.html" target="_self"><span>Chứng nhận chất
-                                                        lượng</span></a></li>
+                                            <li><a href="javascript:void(0)" target="_self"><span>Sứ mệnh - Tầm
+                                                        nhìn</span></a></li>
                                         </ul>
                                     </div>
                                     <div class="sub-row-ft">
@@ -590,7 +586,8 @@
                                             <h3>Chính sách</h3>
                                         </div>
                                         <ul>
-                                            <li><a href="" target="_self"><span>Chính sách thanh toán</span></a></li>
+                                            <li><a href="javascript:void(0)" target="_self"><span>Chính sách thanh
+                                                        toán</span></a></li>
                                             <li><a href="https://joyfood.com.vn/chinh-sach-bao-mat-thong-tin.html"
                                                     target="_self"><span>Chính sách bảo mật thông tin</span></a></li>
                                             <li><a href="https://joyfood.com.vn/chinh-sach-van-chuyen.html"
@@ -657,8 +654,7 @@
                             <div class="logo_langues">
                                 <div class="ll_langues">
                                     <ul class="sub-ll_langues">
-                                        <li><a href="./san-pham.html"><img
-                                                    src="https://joyfood.com.vn/vnt_upload/lang/flag1.png"
+                                        <li><a href=""><img src="https://joyfood.com.vn/vnt_upload/lang/flag1.png"
                                                     alt="vn" />Tiếng Việt</a></li>
                                     </ul>
                                 </div>
@@ -672,13 +668,6 @@
                                     </li>
                                     <li>
                                         <a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
-                                    </li>
-                                    <li>
-                                        <a href="./san-pham.html" target="_self">Sản phẩm</a>
-                                    </li>
-                                    <li>
-                                        <a href="./chung-nhan.html" target="_self">Chứng
-                                            nhận</a>
                                     </li>
                                     <li>
                                         <a href="./tin-tuc.html" target="_self">Tin tức</a>

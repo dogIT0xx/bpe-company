@@ -35,7 +35,7 @@
 }
 
 .title-main span {
-    color: #c4161c;
+    color: #095936;
 }
 
 .view-detail {
@@ -73,13 +73,13 @@
 
 .menuInMain ul li a:hover,
 .menuInMain ul li.current a {
-    color: #c4161c;
+    color: #095936;
 }
 
 .menuInMain ul li a:hover:before,
 .menuInMain ul li.current a:before {
     content: '';
-    background: #c4161c;
+    background: #095936;
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -222,7 +222,7 @@
 }
 
 #slideProductFeature .slick-arrow:hover {
-    color: #c4161c;
+    color: #095936;
 }
 
 #slideProductFeature .product {

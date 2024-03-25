@@ -32,11 +32,12 @@
     <link href="./assets/styles/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/styles/fancybox.css" rel="stylesheet" type="text/css" />
-    <link href="https://joyfood.com.vn/skins/default/style/screen.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/screen.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/global.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/styles/box.css" rel="stylesheet" type="text/css" />
     <link href="./assets/styles/slick.css" type="text/css" rel="stylesheet" />
     <link href="./assets/styles/slick-theme.css" type="text/css" rel="stylesheet" />
-    <script
-        language="javascript"> var ROOT = "https://joyfood.com.vn/"; var ROOT_MOD = "https://joyfood.com.vn/tin-tuc"; var ROOT_PROD = ""; var url = ""; var actmod = ""; var DIR_IMAGE = "https://joyfood.com.vn/skins/default/images"; var cmd = "vnTRUST"; var lang = "vn"; var mem_id = 0; var hotline = "0909 438 000"; var messenger = ""; var zalo = ""; var skype = ""; var email = "cskh@joyfood.com.vn; huu.ha@joyfood.com.vn"; var js_lang = new Array(); js_lang['announce'] = "Thông báo"; js_lang['error'] = "Báo lỗi"; </script>
 
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/jquery-migrate.min.js"></script>
@@ -45,19 +46,9 @@
     <script type="text/javascript" src="./assets/js/core.js"></script>
     <script type="text/javascript" src="./assets/js/slideSlick/js/slick.js"></script>
     <script type="text/javascript" src="./assets/js/javascript.js"></script>
-    <link rel="stylesheet" href="https://joyfood.com.vn/modules/news/css/news.css" type="text/css" />
-    <script type="text/javascript" src="https://joyfood.com.vn/modules/news/js/news.js"></script>
+    <link rel="stylesheet" href="./assets/styles/news.css" type="text/css" />
+    <script type="text/javascript" src="./assets/js/news.js"></script>
     <script type="text/javascript" src="./assets/js/lazingloading/jquery.lazyscrollloading.js"></script>
-    <script type="text/javascript">
-
-        var arr_cat = { 13: 'https://joyfood.com.vn/dung-cu-an-uong-dung-1-lan.html', 12: 'https://joyfood.com.vn/khay-ba-mia-tu-phan-huy.html', 10: 'https://joyfood.com.vn/to-ba-mia-tu-phan-huy.html', 8: 'https://joyfood.com.vn/Ly-Ba-Mia.html', 7: 'https://joyfood.com.vn/dia-ba-mia-tu-phan-huy.html', 6: 'https://joyfood.com.vn/hop-com-ba-mia-tu-phan-huy.html' };
-        var arr_title_cat = { 0: '', 13: 'Dụng cụ ăn uống dùng 1 lần', 12: 'Khay Bã Mía', 10: 'Tô Bã Mía', 8: 'Ly Bã Mía', 7: 'Đĩa Bã Mía', 6: 'Hộp Cơm Bã Mía' };
-
-
-        var arr_input = ['p', 'catID', 'price', 'status_id', 'statusID', 'brand_id', 'bID', 'sort', 'vpage'];
-
-    </script>
-
 </head>
 
 <body>
@@ -68,7 +59,7 @@
                 <div class="top-header">
                     <div class="wrapper">
                         <div class="vnt-hotline">
-                            <div class="hotline">Hotline: <span>0909 438 000</span></div>
+                            <div class="hotline">Hotline: <span>+84 343434</span></div>
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -90,11 +81,7 @@
                                         <a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
                                     </li>
                                     <li>
-                                        <a href="./san-pham.html" target="_self">Sản phẩm</a>
-                                    </li>
-                                    <li>
-                                        <a href="./chung-nhan.html" target="_self">Chứng
-                                            nhận</a>
+                                        <a href="./chung-nhan.html" target="_self">Chứng nhận</a>
                                     </li>
                                     <li class="current">
                                         <a href="./tin-tuc.html" target="_self">Tin tức</a>
@@ -112,8 +99,7 @@
                                 <!--===BEGIN: FORM SEARCH==-->
                                 <div class="formsearch">
 
-                                    <form id="formSearch" name="formSearch" method="post"
-                                        action="https://joyfood.com.vn/tim-kiem.html"
+                                    <form id="formSearch" name="formSearch" method="post" action=""
                                         onSubmit="return check_search(this);" class="box_search">
                                         <div class="wrap-form-search">
                                             <div class="input-group">
@@ -148,10 +134,18 @@
 
                 <!--=== BEGIN: BANNER ===-->
                 <div class="vnt-banner-page">
-                    <div class="slide-banner-page">
-                        <div class="item">
-                            <div class="i-img"><a href="./trang-chu.html" title=""><img src="./assets/images/slide5.jpg"
-                                        alt=""></a></div>
+                    <div class="slide-banner-page slick-initialized slick-slider">
+                        <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 1519px;" role="listbox">
+                                <div class="item slick-slide slick-current slick-active" data-slick-index="0"
+                                    aria-hidden="false"
+                                    style="width: 1519px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+                                    tabindex="-1" role="option" aria-describedby="slick-slide00">
+                                    <div class="i-img"><a href="./trang-chu.html" title="" tabindex="0"><img
+                                                src="./assets/images/slide2.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--===BEGIN: BREADCRUMB===-->
@@ -161,7 +155,7 @@
                             <div class="navation">
                                 <ul>
                                     <li><a href="./trang-chu.html">Trang chủ</a></li>
-                                    <li>TIN TỨC</li>
+                                    <li>Tin tức</li>
                                 </ul>
                             </div>
                         </div>
@@ -188,14 +182,14 @@
                                         <div class="menuTab menutt">
                                             <div class="mc-menu hidden-lg hidden-md">Danh mục</div>
                                             <ul>
-                                                <li><a href='https://joyfood.com.vn/tin-thi-truong.html'>Tin thị
+                                                <li><a href="javascript:void(0)">Tin thị
                                                         trường</a></li>
-                                                <li><a href='https://joyfood.com.vn/tin-cong-ty.html'>Tin công ty</a>
+                                                <li><a href="javascript:void(0)">Tin công ty</a>
                                                 </li>
                                             </ul>
                                         </div>
 
-                                        <div class="mid-content">
+                                        <div class=" mid-content">
 
                                             <div class="news row">
 
@@ -205,7 +199,7 @@
                                                             <div class="i-img" itemprop="image" itemscope
                                                                 itemtype="https://schema.org/ImageObject">
                                                                 <div class="sub-img">
-                                                                    <a href=""><img
+                                                                    <a href="javascript:void(0)"><img
                                                                             src="https://joyfood.com.vn/vnt_upload/news/09_2023/08/thumbs/288__trien-lam-greco-2023.png"
                                                                             itemprop="url"
                                                                             alt='MÍA HÂN HẠNH THAM DỰ TRIỄN LÃM GRECO 2023'
@@ -217,17 +211,21 @@
                                                                 <span class="date">08/09/2023 | 11:13</span>
                                                                 <div class="i-title">
                                                                     <h3 itemprop="headline">
-                                                                        <a itemprop="url" href="">MÍA
-                                                                            HÂN HẠNH THAM DỰ TRIỄN LÃM GRECO 2023</a>
+                                                                        <a itemprop="url" href="javascript:void(0)">MÍA
+                                                                            HÂN HẠNH THAM DỰ TRIỄN LÃM GRECO
+                                                                            2023</a>
                                                                     </h3>
                                                                 </div>
 
                                                                 <div itemprop="description" class="i-content">Nằm trong
-                                                                    chuỗi sự kiện nỗ lực vì thành phố xanh - sạch - đẹp.
-                                                                    Ngày 13 tháng 9, 20023, Thành phố ra mắt triễn lãm
-                                                                    GRECO - Triễn lãm sản phẩm, dịch vụ tăng tưởng xanh
+                                                                    chuỗi sự kiện nỗ lực vì thành phố xanh -
+                                                                    sạch - đẹp.
+                                                                    Ngày 13 tháng 9, 20023, Thành phố ra mắt
+                                                                    triễn lãm
+                                                                    GRECO - Triễn lãm sản phẩm, dịch vụ tăng
+                                                                    tưởng xanh
                                                                     2023. Đây có thể được xem ...</div>
-                                                                <div class="view-detail"><a href=""
+                                                                <div class="view-detail"><a href="javascript:void(0)"
                                                                         title="MÍA HÂN HẠNH THAM DỰ TRIỄN LÃM GRECO 2023">Xem
                                                                         chi tiết</a></div>
                                                             </div>
@@ -241,7 +239,7 @@
                                                             <div class="i-img" itemprop="image" itemscope
                                                                 itemtype="https://schema.org/ImageObject">
                                                                 <div class="sub-img">
-                                                                    <a href=""><img
+                                                                    <a href="javascript:void(0)"><img
                                                                             src="https://joyfood.com.vn/vnt_upload/news/12_2022/22/thumbs/288__xong-xanh-1.jpg"
                                                                             itemprop="url"
                                                                             alt='[BẢN TIN XANH #34] VIỆT NAM TRONG NỖ LỰC SỐNG XANH VÌ MÔI TRƯỜNG'
@@ -253,17 +251,20 @@
                                                                 <span class="date">22/12/2022 | 04:12</span>
                                                                 <div class="i-title">
                                                                     <h3 itemprop="headline">
-                                                                        <a itemprop="url" href="">[BẢN
-                                                                            TIN XANH #34] VIỆT NAM TRONG NỖ LỰC SỐNG
+                                                                        <a itemprop="url" href="javascript:void(0)">[BẢN
+                                                                            TIN XANH #34] VIỆT NAM TRONG NỖ
+                                                                            LỰC SỐNG
                                                                             XANH VÌ MÔI TRƯỜNG</a>
                                                                     </h3>
                                                                 </div>
 
                                                                 <div itemprop="description" class="i-content">Việt Nam
-                                                                    đã và đang nỗ lực không ngừng trong việc đưa ra loạt
-                                                                    tiêu chí cũng như biện pháp để phát triển lâu dài và
+                                                                    đã và đang nỗ lực không ngừng trong việc
+                                                                    đưa ra loạt
+                                                                    tiêu chí cũng như biện pháp để phát
+                                                                    triển lâu dài và
                                                                     bền vững.</div>
-                                                                <div class="view-detail"><a href=""
+                                                                <div class="view-detail"><a href="javascript:void(0)"
                                                                         title="[BẢN TIN XANH #34] VIỆT NAM TRONG NỖ LỰC SỐNG XANH VÌ MÔI TRƯỜNG">Xem
                                                                         chi tiết</a></div>
                                                             </div>
@@ -277,7 +278,7 @@
                                                             <div class="i-img" itemprop="image" itemscope
                                                                 itemtype="https://schema.org/ImageObject">
                                                                 <div class="sub-img">
-                                                                    <a href=""><img
+                                                                    <a href="javascript:void(0)"><img
                                                                             src="https://joyfood.com.vn/vnt_upload/news/11_2022/11/thumbs/288__o-nhiem-vi-nhua-1_1.png"
                                                                             itemprop="url"
                                                                             alt='[BẢN TIN XANH #33] Ô NHIỄM VI NHỰA ĐANG TIẾN GẦN MỨC BÁO ĐỘNG ĐỎ'
@@ -289,16 +290,18 @@
                                                                 <span class="date">11/11/2022 | 10:33</span>
                                                                 <div class="i-title">
                                                                     <h3 itemprop="headline">
-                                                                        <a itemprop="url" href="">[BẢN
-                                                                            TIN XANH #33] Ô NHIỄM VI NHỰA ĐANG TIẾN GẦN
+                                                                        <a itemprop="url" href="javascript:void(0)">[BẢN
+                                                                            TIN XANH #33] Ô NHIỄM VI NHỰA
+                                                                            ĐANG TIẾN GẦN
                                                                             MỨC BÁO ĐỘNG ĐỎ</a>
                                                                     </h3>
                                                                 </div>
 
                                                                 <div itemprop="description" class="i-content">Cùng JOY
-                                                                    FOOD điểm qua một số tin liên quan đến ô nhiễm vi
+                                                                    FOOD điểm qua một số tin liên quan đến ô
+                                                                    nhiễm vi
                                                                     nhựa trong bài viết này nhé!</div>
-                                                                <div class="view-detail"><a href=""
+                                                                <div class="view-detail"><a href="javascript:void(0)"
                                                                         title="[BẢN TIN XANH #33] Ô NHIỄM VI NHỰA ĐANG TIẾN GẦN MỨC BÁO ĐỘNG ĐỎ">Xem
                                                                         chi tiết</a></div>
                                                             </div>
@@ -312,7 +315,7 @@
                                                             <div class="i-img" itemprop="image" itemscope
                                                                 itemtype="https://schema.org/ImageObject">
                                                                 <div class="sub-img">
-                                                                    <a href=""><img
+                                                                    <a href="javascript:void(0)"><img
                                                                             src="https://joyfood.com.vn/vnt_upload/news/11_2022/10/thumbs/288__song-xanh_1.jpg"
                                                                             itemprop="url"
                                                                             alt='[BẢN TIN XANH #32] SỐNG XANH ĐỂ DUY TRÌ ĐA DẠNG SINH HỌC TOÀN CẦU'
@@ -324,17 +327,20 @@
                                                                 <span class="date">10/11/2022 | 11:33</span>
                                                                 <div class="i-title">
                                                                     <h3 itemprop="headline">
-                                                                        <a itemprop="url" href="">[BẢN
-                                                                            TIN XANH #32] SỐNG XANH ĐỂ DUY TRÌ ĐA DẠNG
+                                                                        <a itemprop="url" href="javascript:void(0)">[BẢN
+                                                                            TIN XANH #32] SỐNG XANH ĐỂ DUY
+                                                                            TRÌ ĐA DẠNG
                                                                             SINH HỌC TOÀN CẦU</a>
                                                                     </h3>
                                                                 </div>
 
                                                                 <div itemprop="description" class="i-content">Cùng JOY
-                                                                    FOOD điểm qua những thông tin mới nhất về bản tin
-                                                                    tuần này để hiểu thêm ý nghĩa của việc sống xanh
+                                                                    FOOD điểm qua những thông tin mới nhất
+                                                                    về bản tin
+                                                                    tuần này để hiểu thêm ý nghĩa của việc
+                                                                    sống xanh
                                                                     nhé!</div>
-                                                                <div class="view-detail"><a href=""
+                                                                <div class="view-detail"><a href="javascript:void(0)"
                                                                         title="[BẢN TIN XANH #32] SỐNG XANH ĐỂ DUY TRÌ ĐA DẠNG SINH HỌC TOÀN CẦU">Xem
                                                                         chi tiết</a></div>
                                                             </div>
@@ -348,7 +354,7 @@
                                                             <div class="i-img" itemprop="image" itemscope
                                                                 itemtype="https://schema.org/ImageObject">
                                                                 <div class="sub-img">
-                                                                    <a href=""><img
+                                                                    <a href="javascript:void(0)"><img
                                                                             src="https://joyfood.com.vn/vnt_upload/news/01_2021/thumbs/288__hop_ba_mia_ly_ba_mia.jpg"
                                                                             itemprop="url"
                                                                             alt='TỔNG HỢP CÁC LOẠI BAO BÌ THÂN THIỆN ĐƯỢC SỬ DỤNG NHIỀU NHẤT'
@@ -360,18 +366,22 @@
                                                                 <span class="date">14/03/2022 | 11:57</span>
                                                                 <div class="i-title">
                                                                     <h3 itemprop="headline">
-                                                                        <a itemprop="url" href="">TỔNG
-                                                                            HỢP CÁC LOẠI BAO BÌ THÂN THIỆN ĐƯỢC SỬ DỤNG
+                                                                        <a itemprop="url" href="javascript:void(0)">TỔNG
+                                                                            HỢP CÁC LOẠI BAO BÌ THÂN THIỆN
+                                                                            ĐƯỢC SỬ DỤNG
                                                                             NHIỀU NHẤT</a>
                                                                     </h3>
                                                                 </div>
 
                                                                 <div itemprop="description" class="i-content">Bao bì và
-                                                                    ngành công nghiệp thực phẩm là 2 ngành phát triển,
-                                                                    bổ trợ cho nhau. Xu hướng tiêu dùng ngày nay dẫn đến
-                                                                    nhu cầu sử dụng bao bì thân thiện môi trường ngày
+                                                                    ngành công nghiệp thực phẩm là 2 ngành
+                                                                    phát triển,
+                                                                    bổ trợ cho nhau. Xu hướng tiêu dùng ngày
+                                                                    nay dẫn đến
+                                                                    nhu cầu sử dụng bao bì thân thiện môi
+                                                                    trường ngày
                                                                     càng cao. Hãy cùng BPE điểm ...</div>
-                                                                <div class="view-detail"><a href=""
+                                                                <div class="view-detail"><a href="javascript:void(0)"
                                                                         title="TỔNG HỢP CÁC LOẠI BAO BÌ THÂN THIỆN ĐƯỢC SỬ DỤNG NHIỀU NHẤT">Xem
                                                                         chi tiết</a></div>
                                                             </div>
@@ -383,16 +393,24 @@
                                             <div class="pagination">
                                                 <ul>
                                                     <li><span class="pagecur">1</span></li>
-                                                    <li><a href='' class='pagelink'>2</a></li>
-                                                    <li><a href='' class='pagelink'>3</a></li>
-                                                    <li><a href='' class='pagelink'>4</a></li>
-                                                    <li><a href='' class='pagelink'>5</a></li>
-                                                    <li><a href='' class='pagelink'>6</a></li>
-                                                    <li><a href='' class='pagelink'>7</a></li>
-                                                    <li><a href='' class='pagelink'>8</a></li>
-                                                    <li><a href='' class='btnPage'><i class="fa fa-angle-right"></i></a>
+                                                    <li><a href='javascript:void(0)' class='pagelink'>2</a>
                                                     </li>
-                                                    <li><a href='' class='btnPage'><i
+                                                    <li><a href='javascript:void(0)' class='pagelink'>3</a>
+                                                    </li>
+                                                    <li><a href='javascript:void(0)' class='pagelink'>4</a>
+                                                    </li>
+                                                    <li><a href='javascript:void(0)' class='pagelink'>5</a>
+                                                    </li>
+                                                    <li><a href='javascript:void(0)' class='pagelink'>6</a>
+                                                    </li>
+                                                    <li><a href='javascript:void(0)' class='pagelink'>7</a>
+                                                    </li>
+                                                    <li><a href='javascript:void(0)' class='pagelink'>8</a>
+                                                    </li>
+                                                    <li><a href='javascript:void(0)' class='btnPage'><i
+                                                                class="fa fa-angle-right"></i></a>
+                                                    </li>
+                                                    <li><a href='javascript:void(0)' class='btnPage'><i
                                                                 class="fa fa-angle-double-right"></i></a>
                                                     </li>
                                                 </ul>
@@ -420,7 +438,7 @@
                                     <div class="before fa-home">B2/1, đường 385, phường Tăng Nhơn Phú A, TP Thủ Đức, TP.
                                         Hồ Chí Minh, Việt Nam
                                     </div>
-                                    <div class="before fa-phone">0909 438 000 - (028)7303 0079</div>
+                                    <div class="before fa-phone">+84 343434</div>
                                     <div class="before fa-envelope"><a class="__cf_email__"
                                             data-cfemail="a6c5d5cdcee6ccc9dfc0c9c9c288c5c9cb88d0c8">bpecompanylimited@gmail.com</a>
                                     </div>
@@ -430,7 +448,7 @@
                                     <div class="name  chinhanh">CÔNG TY TNHH BPE - Chi Nhánh Miền Bắc</div>
                                     <div class="before fa-home">P801, Tòa nhà Hoa Cương, số 80b Đường Nguyễn Văn Cừ,
                                         Phường Bồ Đề, Quận Long Biên, Hà Nội</div>
-                                    <div class="before fa-phone">0909 438 000</div>
+                                    <div class="before fa-phone">+84 343434</div>
                                     <div class="before fa-envelope"><a class="__cf_email__"
                                             data-cfemail="4427372f2c042e2b3d222b2b206a272b296a322a">bpecompanylimited@gmail.com/a>
                                     </div>
@@ -447,8 +465,10 @@
                                         <ul>
                                             <li><a href="./gioi-thieu.html" target="_self"><span>Về
                                                         BPE</span></a></li>
-                                            <li><a href="" target="_self"><span>Sứ mệnh - Tầm nhìn</span></a></li>
-                                            <li><a href="" target="_self"><span>Chứng nhận chất lượng</span></a></li>
+                                            <li><a href="javascript:void(0)" target="_self"><span>Sứ mệnh - Tầm
+                                                        nhìn</span></a></li>
+                                            <li><a href="javascript:void(0)" target="_self"><span>Chứng nhận chất
+                                                        lượng</span></a></li>
                                         </ul>
                                     </div>
                                     <div class="sub-row-ft">
@@ -456,10 +476,13 @@
                                             <h3>Chính sách</h3>
                                         </div>
                                         <ul>
-                                            <li><a href="" target="_self"><span>Chính sách thanh toán</span></a></li>
-                                            <li><a href="" target="_self"><span>Chính sách bảo mật thông tin</span></a>
+                                            <li><a href="javascript:void(0)" target="_self"><span>Chính sách thanh
+                                                        toán</span></a></li>
+                                            <li><a href="javascript:void(0)" target="_self"><span>Chính sách bảo mật
+                                                        thông tin</span></a>
                                             </li>
-                                            <li><a href="" target="_self"><span>Chính sách vận chuyển</span></a></li>
+                                            <li><a href="javascript:void(0)" target="_self"><span>Chính sách vận
+                                                        chuyển</span></a></li>
                                         </ul>
                                     </div>
                                     <div class="clear"></div>
@@ -494,8 +517,8 @@
                                     src='https://joyfood.com.vn/vnt_upload/weblink/bocongthuong.png' alt=''
                                     class='png' /></a></div>
                         <div class="b-text">
-                            Giấy phép kinh doanh số: 0314402905 cấp ngày 15/05/2017 bởi Sở Kế hoạch và Đầu Tư TP.Hồ Chí
-                            Minh.<br>Người đại diện: Chủ tịch: Vũ Thị Hạnh
+                            Giấy phép kinh doanh số: 0314402905 cấp ngày 12/03/2024 bởi Sở Kế hoạch và Đầu Tư TP.Hồ Chí
+                            Minh.<br>Giám đốc đại diện: Vũ Thị Hạnh
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -503,11 +526,12 @@
                 <div class="copyright-social">
                     <div class="wrapper">
                         <div class="copyright">
-                            <div class="inline-block">Copyright © 2017 <span>BPE</span></div>
+                            <div class="inline-block">Copyright © 2024 <span>BPE</span></div>
                             <div class="inline-block">
-                                - <a href='http://www.thietkeweb.com' target='_blank' title='thiet ke web'
-                                    rel='dofollow' class='thietkeweb'>Thiết kế web :</a> <strong><a
-                                        href='http://www.trust.vn' target='_blank' rel='dofollow'>TRUST.vn</a> </strong>
+                                - <a href="javascript:void(0)" target='_blank' title='thiet ke web' rel='dofollow'
+                                    class='thietkeweb'>Thiết kế web :</a> <strong><a href="javascript:void(0)"
+                                        target='_blank' rel='dofollow'>VietHoang</a>
+                                </strong>
                             </div>
                         </div>
                     </div>
@@ -539,11 +563,7 @@
                                         <a href="./gioi-thieu.html" target="_self">Giới thiệu</a>
                                     </li>
                                     <li>
-                                        <a href="./san-pham.html" target="_self">Sản phẩm</a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_self">Chứng
-                                            nhận</a>
+                                        <a href="./chung-nhan.html" target="_self">Chứng nhận</a>
                                     </li>
                                     <li>
                                         <a href="./tin-tuc.html" target="_self">Tin tức</a>
@@ -577,8 +597,7 @@
                                         }
 
                                     </script>
-                                    <form id="formSearch" name="formSearch" method="post"
-                                        action="https://joyfood.com.vn/tim-kiem.html"
+                                    <form id="formSearch" name="formSearch" method="post" action=""
                                         onSubmit="return check_search(this);" class="box_search">
                                         <div class="input-group">
                                             <input name="do_search" value="1" type="hidden" />
@@ -608,7 +627,7 @@
                 </div>
                 <div class="div_content">
                     <div class="title_hotline">Hotline:</div>
-                    <div class="number_phone">0909 438 000</div>
+                    <div class="number_phone">+84 343434</div>
                     <div class="yahoo_skype">
                         <div class="clear"></div>
                     </div>

@@ -91,7 +91,7 @@
 }
 
 .product .icon_status {
-    background: #c4161c;
+    background: #095936;
     color: #ffffff;
     font-size: 11px;
     position: absolute;
@@ -139,7 +139,7 @@
     margin-top: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #c4161c;
+    color: #095936;
     text-align: center;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -159,7 +159,7 @@
 }
 
 .product .i-desc .i-more a {
-    background: #c4161c;
+    background: #095936;
     color: #fff;
     font-size: 11px;
     padding: 5px 16px;
@@ -204,7 +204,7 @@
 }
 
 .product:hover .i-desc .i-price {
-    color: #c4161c;
+    color: #095936;
 }
 
 .product .i-desc .i-title {
@@ -313,7 +313,7 @@
     bottom: 0;
     position: absolute;
     z-index: 3;
-    background: #c4161c;
+    background: #095936;
 }
 
 #slide-pro {
@@ -349,7 +349,7 @@
 }
 
 #slide-pro .slick-arrow:hover:after {
-    background: #c4161c;
+    background: #095936;
 }
 
 #slide-pro .slick-arrow:after {
@@ -362,7 +362,7 @@
     width: 40px;
     height: 40px;
     background: #fff;
-    border: 1px solid #c4161c;
+    border: 1px solid #095936;
 }
 
 #slide-pro .slick-next:after {
@@ -447,7 +447,7 @@ ul.tab_nav li:hover {
 ul.tab_nav li:hover a,
 ul.tab_nav li a.active {
     color: #fff;
-    background: #c4161c;
+    background: #095936;
 }
 
 ul.map_nav li a {
@@ -582,7 +582,7 @@ div#vnt-thumbnail-nav .item {
 
 div#vnt-thumbnail-nav .item.slick-current .img {
     position: relative;
-    border: solid 1px #c4161c;
+    border: solid 1px #095936;
 }
 
 div#vnt-thumbnail-nav .item .img {
@@ -701,7 +701,7 @@ div#vnt-thumbnail-for .img img {
 
 .call-pro a {
     display: inline-block;
-    background: #c4161c;
+    background: #095936;
     font-size: 22px;
     line-height: 26px;
     color: #fff;
@@ -717,8 +717,8 @@ div#vnt-thumbnail-for .img img {
 }
 
 .call-pro a:hover {
-    border-color: #c4161c;
-    color: #c4161c;
+    border-color: #095936;
+    color: #095936;
     background: #fff;
 }
 
